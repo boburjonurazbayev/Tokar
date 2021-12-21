@@ -19,6 +19,7 @@
 
                             .process__type {
                                 @include reset-list();
+                                margin-top: 28px;
 
                                 .type__item {
                                     max-width: 266px;
@@ -27,10 +28,13 @@
                                     .item__number {
                                         padding-left: 17px;
                                         width: 266px;
+                                        @include text($fw: 700, $fs: 16px, $lh: 30px);
                                     }
 
                                     .item__p {
                                         padding-left: 17px;
+                                        width: 266px;
+                                        @include text($fw: 700, $fs: 16px, $lh: 30px);
                                     }
 
                                     .item__opener {
@@ -46,6 +50,7 @@
                                     padding: 15px 0;
                                     max-width: 266px;
                                     width: 100%;
+                                    margin-bottom: 20px;
 
                                     .item__number {
                                         color: #FFFFFF;
@@ -117,6 +122,11 @@
 
                                         .item__number {
                                             max-width: 955px;
+                                            width: 100%;
+                                        }
+
+                                        .item__p {
+                                            max-width: none;
                                             width: 100%;
                                         }
                                     }
