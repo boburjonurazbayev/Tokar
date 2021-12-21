@@ -1,0 +1,20 @@
+.nav__heading {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+
+    .nav__title {
+        @include heading();
+    }
+
+    .nav__link {
+        display: flex;
+        text-decoration: none;
+        align-items: center;
+
+        .link__p {
+            @include text($fw: 500, $fs: 16px, $lh: 16px, $color: $orange-color);
+            margin-left: 12px;
+        }
+    }
+}

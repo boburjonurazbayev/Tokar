@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.min.css">
+    <title>Document</title>
+</head>
+<body class="var2">
+    <main class="main">
+        <div class="mini-nav">
+            <div class="container">
+                <div class="mini-nav__inner">
+                    <a href="./index.html" class="mini-nav__link">Главная страница /</a>
+                    <a href="./catalog.html" class="mini-nav__link">Жилое /</a>
+                    <a href="./variant-2.html" class="mini-nav__link">Вариант ST-56 "Barcelona"</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="container">
+                <div class="card__inner">
+                    <div class="nav__heading">
+                        <h1 class="nav__title">Вариант ST-56 «Barcelona»</h1>
+                        <a href="./catalog.html" class="nav__link">
+                            <img src="./images/cancel.svg" alt="Cancel button" class="link__img">
+                            <p class="link__p">Вернуться назад</p>
+                        </a>
+                    </div>
+
+                    <div class="card__card">
+                        <div class="card__images">
+                            <div class="image__list">
+                                <picture>
+                                    <source media="(max-width: 320px)"
+                                        srcset="./images/webp/main-barcelona-mobile.webp 1x, ./images/webp/main-barcelona-mobile@2x.webp 2x">
+                                    <source
+                                        srcset="./images/webp/main-barcelona.webp 1x, ./images/webp/main-barcelona@2x.webp 2x">
+                                    <source media="(max-width: 320px)"
+                                        srcset="./images/main-barcelona-mobile.png 1x, ./images/main-barcelona-mobile@2x.png 2x">
+                                    <img src="./images/main-barcelona.png"
+                                        srcset="./images/main-barcelona.png 1x, ./images/main-barcelona@2x.png"
+                                        alt="Barcelona Img">
+                                </picture>
+
+                                <div class="switches">
+                                    <button class="arrow arrow--prev"><img src="./images/arrow--prev.svg"></button>
+                                    <p>1</p>
+                                    <p>/</p>
+                                    <p>5</p>
+                                    <button class="arrow arrow--next"><img src="./images/arrow--next.svg"></button>
+                                </div>
+
+                                
+                            </div>
+
+                            <div class="card__gallery">
+                                <picture>
+                                    <source
+                                        srcset="./images/webp/first-barcelona.webp 1x, ./images/webp/first-barcelona@2x.webp 2x">
+                                    <img class="card__image" src="./images/first-barcelona.png"
+                                        srcset="./images/first-barcelona.png 1x, ./images/first-barcelona@2x.png"
+                                        alt="Barcelona Img">
+                                </picture>
+                                <picture>
+                                    <source
+                                        srcset="./images/webp/second-barcelona.webp 1x, ./images/webp/second-barcelona@2x.webp 2x">
+                                    <img class="card__image" src="./images/second-barcelona.png"
+                                        alt="Barcelona second Image"
+                                        srcset="./images/second-barcelona.png 1x, ./images/second-barcelona@2x.png">
+                                </picture>
+                                <picture>
+                                    <source
+                                        srcset="./images/webp/third-barcelona.webp 1x, ./images/webp/third-barcelona@2x.webp 2x">
+                                    <img class="card__image" src="./images/third-barcelona.png"
+                                        alt="Barcelona second Image"
+                                        srcset="./images/third-barcelona.png 1x, ./images/third-barcelona@2x.png">
+                                </picture>
+                                <picture>
+                                    <source
+                                        srcset="./images/webp/fourth-barcelona.webp 1x, ./images/webp/fourth-barcelona@2x.webp 2x">
+                                    <img class="card__image" src="./images/fourth-barcelona.png"
+                                        alt="Barcelona second Image"
+                                        srcset="./images/fourth-barcelona.png 1x, ./images/fourth-barcelona@2x.png">
+                                </picture>
+                            </div>
+
+                            <div class="price">
+                                <h2 class="price__title">от 1 000 000 грн</h2>
+                                <p class="price__description">Стоимость строения зависит от комплектации</p>
+                                <button class="price__button">Получить точный расчет</button>
+                            </div>
+                        </div>
+
+                        <form class="card__form" action="https://echo.htmlacademy.ru/">
+                            <label>
+                                <p>Закажите консультацию, если сомневаетесь</p>
+                            </label>
+                            <div class="form__inputs">
+                                <div class="phone__input">
+                                    <input type="tel" name="Tel" class="tel__input" placeholder="+38 XXX XXX XX XX"
+                                        pattern="+38 [0-9]{3} [0-9]{3} [0-9]{2} [0-9]{2}">
+                                    <button type="button">
+                                        <img src="./images/ukr.svg" alt="">
+                                        <img src="./images/arrow.svg" alt="">
+                                    </button>
+                                </div>
+                                <input type="submit" class="submit__input" value="Заказать">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

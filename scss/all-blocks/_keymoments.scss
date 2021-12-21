@@ -1,0 +1,145 @@
+.var1 {
+    .main {
+        .keymoments {
+            margin-bottom: 144px;
+
+            .container {
+                .keymoments__inner {
+                    .keymoments__list {
+                        @include reset-list();
+
+                        .keymoments__item {
+                            .keymoments__title {
+                                @include heading();
+                                margin-bottom: 31px;
+                            }
+
+                            img {
+                                max-width: 1170px;
+                                width: 100%;
+                            }
+
+                            .keymoments__sublist1 {
+                                @include reset-list();
+                                display: flex;
+                                justify-content: space-between;
+
+                                img {
+                                    max-width: 570px;
+                                    width: 100%;
+                                }
+
+                                .sublist1__item:nth-child(2) {
+                                    margin-left: 10px;
+                                }
+                            }
+
+                            .keymoments__sublist2 {
+                                @include reset-list();
+                                display: flex;
+                                justify-content: space-between;
+
+                                img {
+                                    max-width: 570px;
+                                    width: 100%;
+                                }
+
+                                .sublist2__item:nth-child(2) {
+                                    margin-left: 10px;
+                                }
+                            }
+                        }
+
+                        .keymoments__item + .keymoments__item {
+                            margin-top: 145px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 774px) {
+    .var1 {
+        .main {
+            .keymoments {
+                .container {
+                    .keymoments__inner {
+                        .keymoments__list {
+                            flex-direction: column;
+
+                            .keymoments__item {
+                                .keymoments__title {
+                                    font-size: 24px;
+                                }
+
+                                .keymoments__sublist1 {
+                                    .sublist1__item {
+                                        max-width: 372px;
+                                        width: 100%;
+                                    }
+                                }
+
+                                .keymoments__sublist2 {
+                                    .sublist2__item {
+                                        max-width: 372px;
+                                        width: 100%;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 514px) {
+    .var1 {
+        .main {
+            .keymoments {
+                margin-bottom: 60px;
+                
+                .container {
+                    .keymoments__inner {
+                        .keymoments__list {
+                            .keymoments__item {
+                                .keymoments__sublist1 {
+                                    flex-direction: column;
+
+                                    .sublist1__item {
+                                        max-width: 494px;
+                                    }
+
+                                    .sublist1__item:nth-child(2) {
+                                        margin-left: 0;
+                                        margin-top: 10px;
+                                    }
+                                }
+
+                                .keymoments__sublist2 {
+                                    flex-direction: column;
+
+                                    .sublist2__item {
+                                        max-width: 494px;
+                                    }
+
+                                    .sublist2__item:nth-child(2) {
+                                        margin-left: 0;
+                                        margin-top: 50px;
+                                    }
+                                }
+                            }
+
+                            .keymoments__item + .keymoments__item {
+                                margin-top: 50px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
