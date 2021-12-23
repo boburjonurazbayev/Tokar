@@ -61,6 +61,7 @@
                             .process__description {
                                 @include reset-list;
                                 display: flex;
+                                margin-left: 10px;
     
                                 .description__block {
                                     max-width: 270px;

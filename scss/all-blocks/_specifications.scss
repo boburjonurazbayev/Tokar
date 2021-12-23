@@ -123,6 +123,7 @@
                                 .specs__button {
                                     border: none;
                                     background-color: transparent;
+                                    text-decoration: none;
                                     @include text($lh: 24px);
                                 }
 

@@ -28,6 +28,14 @@
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
+  transition: box-shadow 0.7s ease;
+  transition: background 0.7s ease;
+
+  &:hover {
+    background: $orange-color;
+    transition: box-shadow 0.7s ease;
+    transition: background 0.7s ease;
+  }
 }
 
 @mixin reset-list {
