@@ -1,4 +1,4 @@
-.var1 {
+.var1, .var2 {
     .main {
         .process {
             margin-bottom: 145px;
@@ -104,7 +104,7 @@
 }
 
 @media only screen and (max-width: 975px) {
-    .var1 {
+    .var1, .var2 {
         .main {
             .process {
                 .container {
@@ -142,6 +142,7 @@
 
                                 .process__description {
                                     justify-content: space-between;
+                                    margin-left: 0;
                                 }
                             }
                         }
@@ -153,7 +154,7 @@
 }
 
 @media only screen and (max-width: 746px) {
-    .var1 {
+    .var1, .var2 {
         .main {
             .process {
                 margin-bottom: 80px;

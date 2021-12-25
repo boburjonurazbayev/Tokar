@@ -1,4 +1,4 @@
-.var1 {
+.var1, .var2 {
     .main {
         .specifications {
             margin-bottom: 50px;
@@ -154,6 +154,74 @@
     }
 }
 
+.var2 {
+    .main {
+        .specifications {
+            .container {
+                .specifications__inner {
+                    .specifications__info {
+                        flex-direction: column-reverse;
+                        .specifications__list {
+                            display: flex;
+                            justify-content: space-between;
+                            max-width: none;
+
+                            .specifications__item {
+                                border: none;
+                                padding: 0;
+                                padding-left: 36px;
+                                border-left: 1px solid #E7D8C7;
+                                max-width: 348px;
+                                width: 100%;
+
+                                &:last-child {
+                                    border-right: 1px solid #E7D8C7;
+                                }
+                            }
+                        }
+
+                        .specification__description {
+                            .specification__article {
+                                max-width: none;
+
+                                .required__info {
+                                    max-width: none;
+                                    width: 100%;
+
+                                    .required__list {
+                                        display: flex;
+                                        max-width: none;
+
+                                        .required__description {
+                                            max-width: none;
+
+                                            &:last-child {
+                                                margin-top: 0;
+                                            }
+
+                                            .required__text {
+                                                max-width: none;
+
+                                                .info__title {
+                                                    max-width: none;
+                                                }
+
+                                                .info__p {
+                                                    max-width: none;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media only screen and (max-width: 1080px) {
     .var1 {
         .main {
@@ -165,6 +233,42 @@
                                 max-width: 213px;
                                 width: 100%;
                             }
+
+                            .specification__description {
+                                .specification__article {
+                                    .required__info {
+                                        .required__list {
+                                            flex-direction: column-reverse;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .var2 {
+        .main {
+            .specifications {
+                .container {
+                    .specifications__inner {
+                        .specifications__info {
+                            .specification__description {
+                                .specification__article {
+                                    .required__info {
+                                        .required__list {
+                                            flex-direction: column;
+
+                                            .required__description:last-child {
+                                                margin-top: 15px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
                         }
                     }
                 }
@@ -174,21 +278,21 @@
 }
 
 @media only screen and (max-width: 878px) {
-    .var1 {
+    .var1, .var2 {
         .main {
             .specifications {
                 .container {
                     .specifications__inner {
                         padding: 30px;
-
+    
                         .specifications__info {
                             flex-direction: column;
-
+    
                             .specifications__list {
                                 max-width: 759px;
                                 margin-bottom: 20px;
                             }
-
+    
                             .specification__description {
                                 margin-left: 0;
                                 margin: 0 auto;
@@ -199,10 +303,69 @@
             }
         }
     }
+    .var2 {
+        .main {
+            .specifications {
+                .container {
+                    .specifications__inner {
+                        .specifications__info {
+                            flex-direction: column-reverse;
+
+                            .specifications__list {
+                                .specifications__item {
+                                    padding-left: 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 668px) {
+    .var2 {
+        .main {
+            .specifications {
+                .container {
+                    .specifications__inner {
+                        .specifications__info {
+                            .specifications__list {
+                                .specifications__item {
+                                    flex-direction: column;
+                                    border: none;
+                                    padding-left: 0;
+
+                                    .specifications__p {
+                                        margin-left: 0;
+                                    }
+    
+                                    &:first-child {
+                                        border: none;
+                                    }
+        
+                                    &:last-child {
+                                        border: none;
+                                        border-left: none;
+                                        border-right: none;
+                                    }
+                                }
+
+                                .specifications__item + .specifications__item {
+                                    border-left: 1px solid #E7D8C7;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 579px) {
-    .var1 {
+    .var1, .var2 {
         .main {
             .specifications {
                 .container {
@@ -240,6 +403,33 @@
 
                                     .specs__item:nth-child(5) {
                                         margin-top: 6px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .var2 {
+        .main {
+            .specifications {
+                .container {
+                    .specifications__inner {
+                        .specifications__info {
+                            .specifications__list {
+                                .specifications__item {
+                                    .specifications__p {
+                                        font-size: 16px;
+                                    }
+
+                                    .specifications__img {
+                                        width: 52px;
+                                        height: 52px;
                                     }
                                 }
                             }

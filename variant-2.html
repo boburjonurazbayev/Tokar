@@ -13,7 +13,9 @@
             <div class="container">
                 <div class="mini-nav__inner">
                     <a href="./index.html" class="mini-nav__link">Главная страница /</a>
+
                     <a href="./catalog.html" class="mini-nav__link">Жилое /</a>
+
                     <a href="./variant-2.html" class="mini-nav__link">Вариант ST-56 "Barcelona"</a>
                 </div>
             </div>
@@ -32,17 +34,47 @@
 
                     <div class="card__card">
                         <div class="card__images">
-                            <div class="image__list">
-                                <picture>
+                            <div class="image__list1">
+                                <picture class="main__img">
                                     <source media="(max-width: 320px)"
                                         srcset="./images/webp/main-barcelona-mobile.webp 1x, ./images/webp/main-barcelona-mobile@2x.webp 2x">
+
                                     <source
                                         srcset="./images/webp/main-barcelona.webp 1x, ./images/webp/main-barcelona@2x.webp 2x">
+
                                     <source media="(max-width: 320px)"
                                         srcset="./images/main-barcelona-mobile.png 1x, ./images/main-barcelona-mobile@2x.png 2x">
+
                                     <img src="./images/main-barcelona.png"
-                                        srcset="./images/main-barcelona.png 1x, ./images/main-barcelona@2x.png"
+                                        srcset="./images/main-barcelona.png 1x, ./images/main-barcelona@2x.png 2x"
                                         alt="Barcelona Img">
+                                </picture>
+
+                                <picture class="main__img">
+                                    <source
+                                        srcset="./images/webp/second-barcelona.webp 1x, ./images/webp/second-barcelona@2x.webp 2x">
+
+                                    <img src="./images/second-barcelona.png"
+                                        alt="Barcelona second Image"
+                                        srcset="./images/second-barcelona.png 1x, ./images/second-barcelona@2x.png 2x">
+                                </picture>
+
+                                <picture class="main__img">
+                                    <source
+                                        srcset="./images/webp/third-barcelona.webp 1x, ./images/webp/third-barcelona@2x.webp 2x">
+
+                                    <img src="./images/third-barcelona.png"
+                                        alt="Barcelona second Image"
+                                        srcset="./images/third-barcelona.png 1x, ./images/third-barcelona@2x.png 2x">
+                                </picture>
+                                
+                                <picture class="main__img">
+                                    <source
+                                        srcset="./images/webp/fourth-barcelona.webp 1x, ./images/webp/fourth-barcelona@2x.webp 2x">
+
+                                    <img src="./images/fourth-barcelona.png"
+                                        alt="Barcelona second Image"
+                                        srcset="./images/fourth-barcelona.png 1x, ./images/fourth-barcelona@2x.png 2x">
                                 </picture>
 
                                 <div class="switches">
@@ -53,37 +85,44 @@
                                     <button class="arrow arrow--next"><img src="./images/arrow--next.svg"></button>
                                 </div>
 
-                                
+
                             </div>
 
                             <div class="card__gallery">
                                 <picture>
                                     <source
                                         srcset="./images/webp/first-barcelona.webp 1x, ./images/webp/first-barcelona@2x.webp 2x">
+
                                     <img class="card__image" src="./images/first-barcelona.png"
-                                        srcset="./images/first-barcelona.png 1x, ./images/first-barcelona@2x.png"
+                                        srcset="./images/first-barcelona.png 1x, ./images/first-barcelona@2x.png 2x"
                                         alt="Barcelona Img">
                                 </picture>
+
                                 <picture>
                                     <source
                                         srcset="./images/webp/second-barcelona.webp 1x, ./images/webp/second-barcelona@2x.webp 2x">
+
                                     <img class="card__image" src="./images/second-barcelona.png"
                                         alt="Barcelona second Image"
-                                        srcset="./images/second-barcelona.png 1x, ./images/second-barcelona@2x.png">
+                                        srcset="./images/second-barcelona.png 1x, ./images/second-barcelona@2x.png 2x">
                                 </picture>
+
                                 <picture>
                                     <source
                                         srcset="./images/webp/third-barcelona.webp 1x, ./images/webp/third-barcelona@2x.webp 2x">
+
                                     <img class="card__image" src="./images/third-barcelona.png"
                                         alt="Barcelona second Image"
-                                        srcset="./images/third-barcelona.png 1x, ./images/third-barcelona@2x.png">
+                                        srcset="./images/third-barcelona.png 1x, ./images/third-barcelona@2x.png 2x">
                                 </picture>
+                                
                                 <picture>
                                     <source
                                         srcset="./images/webp/fourth-barcelona.webp 1x, ./images/webp/fourth-barcelona@2x.webp 2x">
+
                                     <img class="card__image" src="./images/fourth-barcelona.png"
                                         alt="Barcelona second Image"
-                                        srcset="./images/fourth-barcelona.png 1x, ./images/fourth-barcelona@2x.png">
+                                        srcset="./images/fourth-barcelona.png 1x, ./images/fourth-barcelona@2x.png 2x">
                                 </picture>
                             </div>
 
@@ -94,6 +133,110 @@
                             </div>
                         </div>
 
+                        <form class="card__form" action="https://echo.htmlacademy.ru/">
+                            <label>
+                                <p>Закажите консультацию, если сомневаетесь</p>
+                            </label>
+
+                            <div class="form__inputs">
+                                <div class="phone__input">
+                                    <input type="tel" name="Tel" class="tel__input" placeholder="+38 XXX XXX XX XX"
+                                        pattern="+38 [0-9]{3} [0-9]{3} [0-9]{2} [0-9]{2}">
+                                    <button type="button">
+                                        <img src="./images/ukr.svg" alt="">
+                                        <img src="./images/arrow.svg" alt="">
+                                    </button>
+                                </div>
+
+                                <input type="submit" class="submit__input" value="Заказать">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="specifications">
+            <div class="container">
+                <div class="specifications__inner">
+                    <h1 class="specifications__title">Характеристика строения:</h1>
+                    <div class="specifications__info">
+                        <ul class="specifications__list">
+                            <li class="specifications__item">
+                                <img src="./images/square.svg" alt="Square" class="specifications__img">
+                                <p class="specifications__p">20м²</p>
+                            </li>
+
+                            <li class="specifications__item">
+                                <img src="./images/height.svg" alt="Height" class="specifications__img">
+                                <p class="specifications__p">2 этажа</p>
+                            </li>
+
+                            <li class="specifications__item">
+                                <img src="./images/size.svg" alt="Size" class="specifications__img">
+                                <p class="specifications__p">4x5м</p>
+                            </li>
+                        </ul>
+
+                        <div class="specification__description">
+                            <div class="specification__article">
+                                <picture>
+                                    <source srcset="./images/webp/spec-img.webp 1x, ./images/webp/spec-img@2x.webp 2x">
+                                    <img class="card__image" src="./images/spec-img.png" alt="Barcelona second Image"
+                                        srcset="./images/spec-img.png 1x, ./images/spec-img@2x.png 2x">
+                                </picture>
+
+                                <div class="required__info">
+                                    <h2 class="required__title">Barcelona</h2>
+                                    <ul class="required__list">
+                                        <li class="required__description">
+                                            <div class="required__text">
+                                                <p class="info__title">Технологии:</p>
+                                                <p class="info__p">Дом из газоблока и кирпича</p>
+                                            </div>
+                                        </li>
+
+                                        <li class="required__description">
+                                            <div class="required__text">
+                                                <p class="info__title">Сроки строительства:</p>
+                                                <p class="info__p">30 дней</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="planings">
+            <div class="container">
+                <div class="planings__inner">
+                    <h2 class="planings__title">Планировки</h2>
+                    <ul class="planings__list">
+                        <li class="planings__item">
+                            <picture>
+                                <source type="image/webp" srcset="./images/webp/planing-window.webp 1x, ./images/webp/planing-window@2x.webp 2x">
+                                <img src="./images/planing-window.png" alt="planning window" srcset="./images/planing-window.png 1x, ./images/planing-window@2x.png 2x">
+                            </picture>
+                        </li>
+                        <li class="planings__item">
+                            <picture>
+                                <source type="image/webp" srcset="./images/webp/planing-door.webp 1x, ./images/webp/planing-door@2x.webp 2x">
+                                <img src="./images/planing-door.png" alt="planning window" srcset="./images/planing-door.png 1x, ./images/planing-door@2x.png 2x">
+                            </picture>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="order">
+            <div class="container">
+                <div class="order__inner">
+                    <div class="order__form">
                         <form class="card__form" action="https://echo.htmlacademy.ru/">
                             <label>
                                 <p>Закажите консультацию, если сомневаетесь</p>
@@ -110,7 +253,120 @@
                                 <input type="submit" class="submit__input" value="Заказать">
                             </div>
                         </form>
+
+                        <p>Отправляя данные, Вы соглашаетесь на обработку <a href="./Dogovor.txt">персональных данных</a></p>
                     </div>
+
+                    <picture>
+                        <source type="image/webp" media="(max-width: 774px)"
+                            srcset="./images/webp/consult-mobile.webp 1x, ./images/webp/consult-mobile@2x.webp 2x">
+                        <source type="image/webp"
+                            srcset="./images/webp/consult.webp 1x, ./images/webp/consult@2x.webp 2x">
+                        <source media="(max-width: 774px)"
+                            srcset="./images/consult-mobile.png 1x, ./images/consult-mobile@2x.png 2x">
+                        <img src="./images/consult.png" srcset="./images/consult.png 1x, ./images/consult@2x.png 2x"
+                            alt="Электросеть">
+                    </picture>
+                </div>
+            </div>
+        </div>
+
+        <div class="process">
+            <div class="container">
+                <div id="process" class="process__inner">
+                    <h1 class="process__title">Процесс работы</h1>
+
+                    <ul class="process__list">
+                        <li class="process__item">
+                            <ul class="process__type">
+                                <li class="type__item">
+                                    <p class="item__number">Процесс 1</p>
+                                    <button class="item__opener"><img src="./images/vector-down.svg"></button>
+                                </li>
+
+                                <li class="type__item">
+                                    <p class="item__p">Общение с экспертами</p>
+                                </li>
+                            </ul>
+
+                            <ul class="process__description">
+                                <li class="description__block">
+                                    <img src="./images/meeting.svg" class="block__img">
+                                    <p class="block__p">Ваше знакомство с представителем компании.</p>
+                                </li>
+
+                                <li class="description__block">
+                                    <img src="./images/consultion.svg" class="block__img">
+                                    <p class="block__p">Проведение консультации по интересующим вопросам.</p>
+                                </li>
+
+                                <li class="description__block">
+                                    <img src="./images/acception.svg" class="block__img">
+                                    <p class="block__p">Согласование всех деталей и размеров объекта.</p>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="process__item">
+                            <ul class="process__type">
+                                <li class="type__item">
+                                    <p class="item__number">Процесс 2</p>
+                                    <button class="item__opener"><img src="./images/vector-down.svg"></button>
+                                </li>
+
+                                <li class="type__item">
+                                    <p class="item__p">Подбор варианта</p>
+                                </li>
+                            </ul>
+
+                            <ul class="process__description">
+                                <li class="description__block">
+                                    <img src="./images/3d.svg" class="block__img">
+                                    <p class="block__p">Создание индивидуального 3D-макета вашего проекта.</p>
+                                </li>
+
+                                <li class="description__block">
+                                    <img src="./images/papers.svg" class="block__img">
+                                    <p class="block__p">Заключение договора по выбранному варианту.</p>
+                                </li>
+
+                                <li class="description__block">
+                                    <img src="./images/money.svg" class="block__img">
+                                    <p class="block__p">Оплата предоплаты проекта.</p>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="process__item">
+                            <ul class="process__type">
+                                <li class="type__item">
+                                    <p class="item__number">Процесс 3</p>
+                                    <button class="item__opener"><img src="./images/vector-down.svg"></button>
+                                </li>
+
+                                <li class="type__item">
+                                    <p class="item__p">Процесс работы и сдача проекта</p>
+                                </li>
+                            </ul>
+
+                            <ul class="process__description">
+                                <li class="description__block">
+                                    <img src="./images/preparation.svg" class="block__img">
+                                    <p class="block__p">Подготовка фундамента и материалов, конструкции.</p>
+                                </li>
+
+                                <li class="description__block">
+                                    <img src="./images/car.svg" class="block__img">
+                                    <p class="block__p">Доставка на место и монтажные работы.</p>
+                                </li>
+                                
+                                <li class="description__block">
+                                    <img src="./images/payment.svg" class="block__img">
+                                    <p class="block__p">Сдача проекта на месте и оплата оставшийся части суммы</p>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>

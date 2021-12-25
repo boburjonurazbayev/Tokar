@@ -38,13 +38,6 @@
                                 &__button {
                                     @include button($h: none);
                                     padding: 20px 45px;
-                                    transition: box-shadow 0.7s ease-in;
-                                    cursor: pointer;
-    
-                                    &:hover {
-                                        box-shadow: 0px 4px 4px rgba(203, 135, 52, 0.7);
-                                        transition: box-shadow 0.7s ease-out;
-                                    }
                                 }
                             }
 
@@ -203,7 +196,7 @@
 }
 
 @media only screen and (max-width: 1129px) {
-    .var1 {
+    .var1, .var2 {
         .main {
             .card {
                 .container {
@@ -290,7 +283,7 @@
 }
 
 @media only screen and (max-width: 545px) {
-    .var1 {
+    .var1, .var2 {
         .main {
             .card {
                 .container {
@@ -338,7 +331,7 @@
 }
 
 @media only screen and (max-width: 365px) {
-    .var1 {
+    .var1, .var2 {
         .main {
             .card {
                 .container {
