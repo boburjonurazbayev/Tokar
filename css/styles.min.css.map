@@ -19,7 +19,7 @@
         "../scss/all-blocks/_articles.scss",
         "../scss/all-blocks/_seo.scss",
         "../scss/all-blocks/_project.scss",
-        "../scss/all-blocks/_catalog.scss",
+        "../scss/all-blocks/_catalogues.scss",
         "../scss/all-blocks/_intro.scss",
         "../scss/all-blocks/_structure.scss",
         "../scss/all-blocks/_style.scss",
