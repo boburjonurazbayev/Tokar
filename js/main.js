@@ -2,9 +2,10 @@ const elNext = document.querySelector('.arrow--next')
 const elPrev = document.querySelector('.arrow--prev')
 const elImg = document.querySelector('.main__img')
 const elList = document.querySelector('.image__list1')
-const elButton = document.querySelector('.price__button')
+const elButtons = document.querySelectorAll('.pop-button')
 const elPop = document.querySelector('.pop-ups')
 const elMain = document.querySelector('.main')
+const elsExit = document.querySelectorAll('.pop-exit')
 const counter = 1;
 
 elNext.addEventListener('click', () => {
@@ -19,9 +20,18 @@ elPrev.addEventListener('click', () => {
     console.log('-image')
 })
 
-elButton.addEventListener('click', () => {
-    elMain.style.background = "rgba(43, 42, 40, 0.6)";
-    elMain.style.opacity = "0.6";
-    elMain.style.filter = "brightness(0.45)";
-    elPop.classList.add('pop-ups--active')
+elButtons.forEach(element => {
+    element.addEventListener('click', () => {
+        elMain.style.background = "rgba(43, 42, 40, 0.6)";
+        elMain.style.filter = "brightness(0.45)";
+        elPop.classList.add('pop-ups--active')
+    })
+})
+
+elsExit.forEach(element => {
+    element.addEventListener('click', () => {
+        elMain.style.background = "none";
+        elMain.style.filter = "none";
+        elPop.classList.remove('pop-ups--active')
+    })
 })

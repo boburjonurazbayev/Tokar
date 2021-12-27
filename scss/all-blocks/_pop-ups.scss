@@ -1,127 +1,211 @@
 .var1, .var2 {
+    position: relative;
+
     .pop-ups {
         display: none;
     }
     
     .pop-ups--active {
         display: block;
+        height: 100%;
         position: absolute;
         right: 50%;
         top: 50%;
-        // bottom: 50%;
         transform: translate(50%, 50%);
     
         .pop-up {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-radius: 0px 40px 0px 0px;
-            background-color: #FFFFFF;
-            // padding: 20px;
-            flex-direction: column-reverse;
-            padding-bottom: 20px;
-            max-width: 564px;
+            max-width: 613px;
             width: 100%;
-    
-            picture {
-                margin-left: 0;
-    
-                filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-                max-width: 752px;
-                width: 100%;
-    
-                img {
-                    max-width: 722px;
-                    width: 100%;
-                }
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: start;
+
+            &:first-child {
+                margin-bottom: 145px;
+            }
+
+            .pop-exit {
+                padding: 0;
+                margin: 0;
+                border: none;
+                background-color: transparent;
+                transform: translateY(-100%);
+                cursor: pointer;
             }
     
-            .order__form {
-                margin-left: 0;
-                text-align: center;
-                margin-bottom: 28px;
-    
-                .card__form {
-                    max-width: 605px;
-                    width: 100%;
-                    margin-bottom: 31px;
-    
-                    label {
-                        max-width: none;
-    
-                        p {
-                            @include text($lh: 36px, $fw: 300);
-                            margin-bottom: 26px;
-                            max-width: 379px;
-                            width: 100%;
-                            max-width: none;
-                            font-size: 20px;
-                            text-align: left;
-                        }
-                    }
-    
-                    .form__inputs {
-                        display: flex;
-                        flex-direction: column;
-                        max-width: none;
+            .pop-up__inner {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                border-radius: 0px 40px 0px 0px;
+                background-color: #FFFFFF;
+                flex-direction: column;
+                padding-bottom: 20px;
+                max-width: 564px;
+                width: 100%;
+
+                picture {
+                    margin-left: 0;
+                    margin-bottom: 35px;
+        
+                    .pop-up__image {
+                        max-width: 722px;
                         width: 100%;
-                
-                        .phone__input {
-                            max-width: none;
-                            width: 100%;
-                            position: relative; 
-                            margin-bottom: 10px;
-                            height: 100%;
-                
-                            button {
-                                border: none;
-                                background-color: transparent;
-                                display: flex;
-                                align-items: center;
-                                position: absolute;
-                                top: 0;
-                                bottom: 0;
-                                left: 10px;
-                
-                                img:nth-child(2) {
-                                    margin-left: 5px;
-                                }
-                            }
-                
-                            .tel__input {
-                                max-width: none;
-                                width: 100%;
-                                height: 100%;
-                                border: 1px solid #E7D8C7;
-                                box-sizing: border-box;
-                                border-radius: 4px;
-                                padding: 15px;
-                                padding-left: 81px;
-                            }
-                
-                            .tel__input::placeholder {
-                                @include text($fs: 14px, $lh: 17px, $color: #828282);
-                            }
-                
-                            
-                        }
-                
-                        .submit__input {
-                            @include button($h: none, $w:200px);
-                            max-width: none;
-                            margin-left: 0;
-                            padding: 23px 104px;
-                            cursor: pointer;
+
+                        &1 {
+                            border-bottom: 1px solid #E7D8C7;
                         }
                     }
                 }
+        
+                .order__form {
+                    margin-left: 0;
+                    text-align: center;
+                    padding: 0 72px;
+        
+                    .card__form {
+                        margin-bottom: 31px;
+        
+                        label {
+                            p {
+                                @include text($fs: 30px, $lh: 38px, $fw: 300);
+                                margin-bottom: 26px;
+                                text-align: left;
+                                max-width: 396px;
+                                width: 100%;
+                            }
+                        }
+        
+                        .form__inputs {
+                            display: flex;
+                            flex-direction: column;
+                            max-width: none;
+                            width: 100%;
+                    
+                            .phone__input {
+                                max-width: none;
+                                width: 100%;
+                                position: relative; 
+                                margin-bottom: 10px;
+                                height: 100%;
+                    
+                                button {
+                                    border: none;
+                                    background-color: transparent;
+                                    display: flex;
+                                    align-items: center;
+                                    position: absolute;
+                                    top: 0;
+                                    bottom: 0;
+                                    left: 10px;
+                    
+                                    img:nth-child(2) {
+                                        margin-left: 5px;
+                                    }
+                                }
+                    
+                                .tel__input {
+                                    max-width: none;
+                                    width: 100%;
+                                    height: 100%;
+                                    border: 1px solid #E7D8C7;
+                                    box-sizing: border-box;
+                                    border-radius: 4px;
+                                    padding: 20.5px;
+                                    padding-left: 81px;
+                                }
+                    
+                                .tel__input::placeholder {
+                                    @include text($fs: 14px, $lh: 17px, $color: #828282);
+                                }
+                    
+                                
+                            }
+                    
+                            .submit__input {
+                                @include button($w:none);
+                                margin-left: 0;
+                                padding: 23px 104px;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+    
+                    p {
+                        @include text($fw: 300, $fs: 14px, $lh: 24px);
+                        text-align: left;
+                        margin-left: 8px;
+                        width: 65%;
+    
+                        a {
+                            @include text($fw: 600, $fs: 14px, $lh: 24px, $color: $orange-color);
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 
-                p {
-                    @include text($fw: 300, $fs: 14px, $lh: 14px);
+@media only screen and (max-width: 612px) {
+    .var1, .var2 {
+        .pop-ups--active {
+            .pop-up {
+                flex-direction: column;
 
-                    a {
-                        @include text($fw: bold, $fs: 14px, $lh: 14px, $color: $orange-color);
-                        text-decoration: none;
+                .pop-exit {
+                    transform: translateY(0);
+                    align-items: center;
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 565px) {
+    .var1, .var2 {
+        .pop-ups--active {
+            .pop-up {
+                max-width: 300px;
+                width: 100%;
+
+                &:first-child {
+                    margin-bottom: 65px;
+                }
+
+                .pop-up__inner {
+                    max-width: 300px;
+                    display: block;
+                    border-radius: 0px 40px;
+
+                    picture {
+                        img {
+                            margin-bottom: 33px;
+                        }
+                    }
+
+                    .order__form {
+                        padding: 0 20px;
+                        align-items: center;
+
+                        .card__form {
+                            label {
+                                p {
+                                    @include text($fs: 20px, $lh: 26px, $fw: 300);
+                                    margin-bottom: 26px;
+                                    max-width: 260px;
+                                    width: 100%;
+                                }
+                            }
+                        }
+
+                        p {
+                            max-width: 247px;
+                            width: 100%;
+                            margin-left: 0;
+                        }
                     }
                 }
             }
