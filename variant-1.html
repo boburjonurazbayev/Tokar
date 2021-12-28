@@ -144,7 +144,7 @@
                                 <div class="phone__input phone__ukr">
                                     <input type="tel" name="Tel" class="tel__input" placeholder="+38 XXX XXX XX XX"
                                         pattern="^\+?3?8?([\s\.-]\d{3}[\s\.-]\d{3}[\s\.-]\d{2}[\s\.-]\d{2})$">
-                                    <button type="button">
+                                    <button type="button" class="flag__button">
                                         <img src="./images/ukr.svg" alt="">
                                         <img src="./images/arrow.svg" alt="">
                                     </button>
@@ -153,15 +153,28 @@
                                 <div class="phone__input phone__rus">
                                     <input type="tel" name="Tel" class="tel__input" placeholder="+7 XXX XXX XX XX"
                                         pattern="^\+?7?([\s\.-]\d{3}[\s\.-]\d{3}[\s\.-]\d{2}[\s\.-]\d{2})$">
-                                    <button type="button">
+                                    <button type="button" class="flag__button">
                                         <img src="./images/rus.svg" alt="Russia">
                                         <img src="./images/arrow.svg" alt="arrow">
                                     </button>
                                 </div>
 
-                                <!-- <div class="tel-type">
-                                    Need to end tel menu
-                                </div> -->
+                                <div class="tel-type">
+                                    <ul class="tel__list">
+                                        <button type="button" class="tel__button">
+                                            <li class="tel__item item__rus">
+                                                <img src="./images/rus.svg" alt="Russia">
+                                                <p class="tel__p">+7 XXX XXX XX XX</p>
+                                            </li>
+                                        </button>
+                                        <button type="button" class="tel__button">
+                                            <li class="tel__item item__ukr">
+                                                <img src="./images/ukr.svg" alt="Ukraine">
+                                                <p class="tel__p">+38 XXX XXX XX XX</p>
+                                            </li>
+                                        </button>
+                                    </ul>
+                                </div>
 
                                 <input type="submit" class="submit__input" value="Заказать">
                             </div>
@@ -400,7 +413,7 @@
                                 <div class="phone__input">
                                     <input type="tel" name="Tel" class="tel__input" placeholder="+38 XXX XXX XX XX"
                                         pattern="^\+?3?8?([\s\.-]\d{3}[\s\.-]\d{3}[\s\.-]\d{2}[\s\.-]\d{2})$">
-                                    <button type="button">
+                                    <button type="button" class="flag__button">
                                         <img src="./images/ukr.svg" alt="">
                                         <img src="./images/arrow.svg" alt="">
                                     </button>

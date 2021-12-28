@@ -6,6 +6,8 @@ const elButtons = document.querySelectorAll('.pop-button')
 const elPop = document.querySelector('.pop-ups')
 const elMain = document.querySelector('.main')
 const elsExit = document.querySelectorAll('.pop-exit')
+const elFlag = document.querySelectorAll('.flag__button')
+const elTelType = document.querySelectorAll('.tel-type')
 const counter = 1;
 
 elNext.addEventListener('click', () => {
@@ -33,5 +35,13 @@ elsExit.forEach(element => {
         elMain.style.background = "none";
         elMain.style.filter = "none";
         elPop.classList.remove('pop-ups--active')
+    })
+})
+
+elFlag.forEach(element => {
+    element.addEventListener('click', () => {
+        elTelType.forEach(el => {
+            el.classList.toggle('tel-type--active')
+        })
     })
 })

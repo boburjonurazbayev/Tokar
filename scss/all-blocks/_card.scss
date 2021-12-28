@@ -143,6 +143,7 @@
         
                             .form__inputs {
                                 display: flex;
+                                position: relative;
 
                                 .phone__rus {
                                     display: none;
@@ -162,6 +163,7 @@
                                         top: 0;
                                         bottom: 0;
                                         left: 10px;
+                                        cursor: pointer;
 
                                         img:nth-child(1) {
                                             width: 29px;
