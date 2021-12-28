@@ -32,6 +32,7 @@
                         
                             .form__inputs {
                                 display: flex;
+                                position: relative;
                         
                                 .phone__input {
                                     max-width: 390px;
@@ -47,6 +48,7 @@
                                         top: 0;
                                         bottom: 0;
                                         left: 10px;
+                                        cursor: pointer;
                         
                                         img:nth-child(2) {
                                             margin-left: 5px;
@@ -70,6 +72,10 @@
                                         padding-left: 81px;
                                     }
                                 }
+
+                                .phone__rus {
+                                    display: none;
+                                }
                         
                                 .submit__input {
                                     @include button($h: none, $w:200px);
@@ -80,7 +86,7 @@
                             }
                         }
 
-                        p {
+                        .form__p {
                             @include text($fw: 300, $fs: 14px, $lh: 14px);
 
                             a {

@@ -8,6 +8,10 @@ const elMain = document.querySelector('.main')
 const elsExit = document.querySelectorAll('.pop-exit')
 const elFlag = document.querySelectorAll('.flag__button')
 const elTelType = document.querySelectorAll('.tel-type')
+const elTelUkr = document.querySelectorAll('.button__ukr')
+const elTelRus = document.querySelectorAll('.button__rus')
+const elForm = document.querySelectorAll('.form__inputs')
+const elFlagArrow = document.querySelectorAll('.flag__arrow')
 const counter = 1;
 
 elNext.addEventListener('click', () => {
@@ -42,6 +46,22 @@ elFlag.forEach(element => {
     element.addEventListener('click', () => {
         elTelType.forEach(el => {
             el.classList.toggle('tel-type--active')
+        })
+    })
+})
+
+elTelUkr.forEach(element => {
+    element.addEventListener('click', () => {
+        elForm.forEach(el => {
+            el.classList.remove('form__rus')
+        })
+    })
+})
+
+elTelRus.forEach(element => {
+    element.addEventListener('click', () => {
+        elForm.forEach(el => {
+            el.classList.add('form__rus')
         })
     })
 })
