@@ -68,6 +68,15 @@
     }
 }
 
+.pop-ups--active {
+    .tel-type--active {
+        position: static;
+        top: 0;
+        transform: translateY(0);
+        margin-bottom: 10px;
+    }
+}
+
 @media only screen and (max-width: 545px) {
     .var1, .var2 {
         .card {

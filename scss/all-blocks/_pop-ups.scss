@@ -81,6 +81,11 @@
                             flex-direction: column;
                             max-width: none;
                             width: 100%;
+                            position: relative;
+
+                            .phone__rus {
+                                display: none;
+                            }
                     
                             .phone__input {
                                 max-width: none;
@@ -98,7 +103,13 @@
                                     top: 0;
                                     bottom: 0;
                                     left: 10px;
-                    
+                                    cursor: pointer;
+
+                                    img:nth-child(1) {
+                                        width: 29px;
+                                        height: 21px;
+                                    }   
+
                                     img:nth-child(2) {
                                         margin-left: 5px;
                                     }
@@ -129,9 +140,19 @@
                                 cursor: pointer;
                             }
                         }
+
+                        .form__rus {
+                            .phone__rus {
+                                display: block;
+                            }
+
+                            .phone__ukr {
+                                display: none;
+                            }
+                        }
                     }
     
-                    p {
+                    .form__p {
                         @include text($fw: 300, $fs: 14px, $lh: 24px);
                         text-align: left;
                         margin-left: 8px;
@@ -201,7 +222,7 @@
                             }
                         }
 
-                        p {
+                        .form__p {
                             max-width: 247px;
                             width: 100%;
                             margin-left: 0;
