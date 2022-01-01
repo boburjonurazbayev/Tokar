@@ -75,19 +75,6 @@ for (let i = 0; i < elTelRus.length; i++) {
     })
 }
 
-// elTelRus.forEach(element => {
-//     element.addEventListener('click', rusFunction)
-// })
-
-// function rusFunction() {
-//     elTelType.forEach(type => {
-//         type.classList.remove('tel-type--active');
-//     });
-//     elForm.forEach(el => {
-//         el.classList.add('form__rus')
-//     });
-// }
-
 elNext.addEventListener('click', () => {
     counter++;
     elList.classList.add("image__list" + counter);
