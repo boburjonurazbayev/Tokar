@@ -164,6 +164,9 @@
                         .process__list {
                             .process__item {
                                 .process__type {
+                                    margin-top: 0;
+                                    margin-bottom: 0;
+
                                     .type__item {
                                         text-align: left;
                                     }
@@ -175,12 +178,25 @@
                                             display: block;
                                             border: none;
                                             background-color: transparent;
+                                            transform: rotate(180deg);
+                                            transition: transform 0.3s;
                                         }
+                                    }
+
+                                    .type__item:nth-child(2){
+                                        display: none;
                                     }
                                 }
 
                                 .process__description {
+                                    // display: none;
+                                    height: 0;
                                     flex-direction: column;
+                                    overflow-y: hidden;
+                                    visibility: hidden;
+                                    opacity: 0;
+                                    transition: visibility 0s, opacity 0.5s linear;
+                                    // transition: display 0.3s ease-in-out, height 0.3s ease-in-out;
 
                                     .description__block {
                                         max-width: 726px;
@@ -191,6 +207,47 @@
                                         margin-left: 0;
                                         margin-top: 15px;
                                     }
+                                }
+                            }
+
+                            .process__item + .process__item {
+                                margin-top: 0;
+                            }
+
+                            .process__item--active {
+                                margin-bottom: 60px;
+
+                                .process__type {
+                                    margin-top: 28px;
+                                    margin-bottom: 20px;
+
+                                    &:nth-child(1) {
+                                        margin-top: 0;
+                                    }
+
+                                    .type__item:nth-child(1){
+                                        .item__opener {
+                                            transform: rotate(0deg);
+                                            transition: transform 0.3s;
+                                        }
+                                    }
+
+                                    .type__item:nth-child(2) {
+                                        display: block;
+                                    }
+                                }
+
+                                &:nth-child(3) {
+                                    margin-bottom: 0;
+                                }
+
+                                .process__description {
+                                    // display: block;
+                                    height: 100%;
+                                    visibility: visible;
+                                    opacity: 1;
+                                    overflow-y: visible;
+                                    transition: visibility 0s, opacity 0.5s linear;
                                 }
                             }
                         }
