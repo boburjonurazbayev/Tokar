@@ -14,6 +14,11 @@ var elForm = document.querySelectorAll('.form__inputs')
 var elFlagArrow = document.querySelectorAll('.flag__arrow')
 const itemOpener = document.querySelectorAll('.item__opener')
 const elPrItem = document.querySelectorAll('.process__item')
+let array1 = []
+let array2 = []
+let array3 = []
+let array0 = []
+let count = 0;
 let counter = 0;
 
 elButtons.forEach(element => {
@@ -74,6 +79,19 @@ for (let i = 0; i < elTelRus.length; i++) {
         })
     })
 }
+
+// Not working is up 
+// for (let i = 0; i < elTelType.length; i++) {
+//     // if (`array${i-1}`.includes(elFlag[i]) === true) {
+//     //     `array${i}`.push(elFlag[i+1], elFlag[i+2])
+//     // } else {
+//     //     `array${i}`.push(elFlag[i], elFlag[i+1])
+//     // }
+
+//     console.log(`array${i}`)
+// }
+
+// console.log(array0, array1, array2, array3)
 
 elNext.addEventListener('click', () => {
     counter++;
