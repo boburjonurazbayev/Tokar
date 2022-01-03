@@ -1,3 +1,5 @@
+// required variables
+
 var elNext = document.querySelector('.arrow--next')
 var elPrev = document.querySelector('.arrow--prev')
 var elImg = document.querySelector('.main__img')
@@ -7,19 +9,43 @@ var elPop = document.querySelector('.pop-ups')
 var elMain = document.querySelector('.main')
 var elsExit = document.querySelectorAll('.pop-exit')
 var elFlag = document.querySelectorAll('.flag__button')
-var elTelType = document.querySelectorAll('.tel-type')
+const elTelType = document.querySelectorAll('.tel-type')
 var elTelUkr = document.querySelectorAll('.button__ukr')
 var elTelRus = document.querySelectorAll('.button__rus')
 var elForm = document.querySelectorAll('.form__inputs')
 var elFlagArrow = document.querySelectorAll('.flag__arrow')
-const itemOpener = document.querySelectorAll('.item__opener')
+const galButtons = document.querySelectorAll('.gallery__button')
+const itemOpener = document.querySelectorAll('.full__opener')
 const elPrItem = document.querySelectorAll('.process__item')
-let array1 = []
-let array2 = []
-let array3 = []
-let array0 = []
+var flagCounter = []
 let count = 0;
 let counter = 0;
+
+
+elNext.addEventListener('click', () => {
+    counter++;
+    elList.classList.add(`image__list${counter}`);
+
+    if (counter > 3) {
+        counter = 0;
+        elList.classList.remove("image__list1", "image__list2", "image__list3");
+        elList.className = "image__list";
+    }
+})
+
+elPrev.addEventListener('click', () => {
+    elList.classList.remove(`image__list${counter}`);
+    counter--;
+
+    if (counter < 0) {
+        counter = 3;
+        elList.classList.add("image__list1", "image__list2", "image__list3");
+    }
+})
+
+if (counter < 0) {
+    void (0)
+}
 
 elButtons.forEach(element => {
     element.addEventListener('click', () => {
@@ -34,21 +60,6 @@ elsExit.forEach(element => {
         elMain.style.background = "none";
         elMain.style.filter = "none";
         elPop.classList.remove('pop-ups--active')
-    })
-})
-
-// for (let i = 0; i < elFlag.length; i++) {
-//     elFlag[i].addEventListener('click', () => {
-//         console.log('pressed')
-//         elTelType[i].classList.toggle("tel-type--active")
-//     })
-// }
-
-elFlag.forEach(element => {
-    element.addEventListener('click', () => {
-        elTelType.forEach(el => {
-            el.classList.toggle('tel-type--active')
-        })
     })
 })
 
@@ -80,38 +91,20 @@ for (let i = 0; i < elTelRus.length; i++) {
     })
 }
 
-// Not working is up 
-// for (let i = 0; i < elTelType.length; i++) {
-//     // if (`array${i-1}`.includes(elFlag[i]) === true) {
-//     //     `array${i}`.push(elFlag[i+1], elFlag[i+2])
-//     // } else {
-//     //     `array${i}`.push(elFlag[i], elFlag[i+1])
-//     // }
-
-//     console.log(`array${i}`)
-// }
-
-// console.log(array0, array1, array2, array3)
-
-elNext.addEventListener('click', () => {
-    counter++;
-    elList.classList.add("image__list" + counter);
-
-    if (counter > 3) {
-        counter = 0;
-        elList.classList.remove("image__list1", "image__list2", "image__list3");
-        elList.className = "image__list";
-    }
-})
-
-elPrev.addEventListener('click', () => {
-    elList.classList.remove("image__list" + counter);
-    counter--;
-})
-
-if (counter < 0) {
-    void (0)
+for (let i = 1; i < elTelType.length+1; i++) {
+    var specialCounter = i * 2;
+    flagCounter[i-1] = [elFlag[specialCounter-2], elFlag[specialCounter-1]]
+    flagCounter[i-1].forEach(element => {
+        element.addEventListener("click", () => {
+            elTelType.forEach(el => {
+                el.classList.remove("tel-type--active")
+            })
+            elTelType[i-1].classList.toggle("tel-type--active")
+            console.log("clicked")
+        })
+    });
 }
+
 
 for (let i = 0; i < elPrItem.length; i++) {
     itemOpener[i].addEventListener('click', () => {

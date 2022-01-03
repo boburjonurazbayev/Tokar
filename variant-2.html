@@ -21,7 +21,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card" id="card">
             <div class="container">
                 <div class="card__inner">
                     <div class="nav__heading">
@@ -80,7 +80,7 @@
                                         srcset="./images/main-barcelona.png 1x, ./images/main-barcelona@2x.png"
                                         alt="Barcelona Img">
                                 </picture>
-                                
+
                                 <picture class="main__img">
                                     <source media="(max-width: 320px)"
                                         srcset="./images/webp/main-barcelona-mobile.webp 1x, ./images/webp/main-barcelona-mobile@2x.webp 2x">
@@ -100,7 +100,7 @@
                                     <button class="arrow arrow--prev"><img src="./images/arrow--prev.svg"></button>
                                     <p>1</p>
                                     <p>/</p>
-                                    <p>5</p>
+                                    <p>4</p>
                                     <button class="arrow arrow--next"><img src="./images/arrow--next.svg"></button>
                                 </div>
 
@@ -108,47 +108,48 @@
                             </div>
 
                             <div class="card__gallery">
-                                <picture>
+                                <picture class="gallery__button">
                                     <source
                                         srcset="./images/webp/first-barcelona.webp 1x, ./images/webp/first-barcelona@2x.webp 2x">
 
                                     <img class="card__image" src="./images/first-barcelona.png"
-                                        srcset="./images/first-barcelona.png 1x, ./images/first-barcelona@2x.png 2x"
+                                        srcset="./images/first-barcelona.png 1x, ./images/first-barcelona@2x.png"
                                         alt="Barcelona Img">
                                 </picture>
 
-                                <picture>
+                                <picture class="gallery__button">
                                     <source
                                         srcset="./images/webp/second-barcelona.webp 1x, ./images/webp/second-barcelona@2x.webp 2x">
 
                                     <img class="card__image" src="./images/second-barcelona.png"
                                         alt="Barcelona second Image"
-                                        srcset="./images/second-barcelona.png 1x, ./images/second-barcelona@2x.png 2x">
+                                        srcset="./images/second-barcelona.png 1x, ./images/second-barcelona@2x.png">
                                 </picture>
 
-                                <picture>
+                                <picture class="gallery__button">
                                     <source
                                         srcset="./images/webp/third-barcelona.webp 1x, ./images/webp/third-barcelona@2x.webp 2x">
 
                                     <img class="card__image" src="./images/third-barcelona.png"
                                         alt="Barcelona second Image"
-                                        srcset="./images/third-barcelona.png 1x, ./images/third-barcelona@2x.png 2x">
+                                        srcset="./images/third-barcelona.png 1x, ./images/third-barcelona@2x.png">
                                 </picture>
-                                
-                                <picture>
+
+                                <picture class="gallery__button">
                                     <source
                                         srcset="./images/webp/fourth-barcelona.webp 1x, ./images/webp/fourth-barcelona@2x.webp 2x">
 
                                     <img class="card__image" src="./images/fourth-barcelona.png"
                                         alt="Barcelona second Image"
-                                        srcset="./images/fourth-barcelona.png 1x, ./images/fourth-barcelona@2x.png 2x">
+                                        srcset="./images/fourth-barcelona.png 1x, ./images/fourth-barcelona@2x.png">
                                 </picture>
                             </div>
 
                             <div class="price">
                                 <h2 class="price__title">от 1 000 000 грн</h2>
                                 <p class="price__description">Стоимость строения зависит от комплектации</p>
-                                <a href="#pop-exit" class="price__button pop-button">Получить точный расчет</a>
+                                <a class="price__button pop-button" id="price-button" href="#pop-exit">Получить точный
+                                    расчет</a>
                             </div>
                         </div>
 
@@ -352,7 +353,7 @@
                     <ul class="process__list">
                         <li class="process__item">
                             <ul class="process__type">
-                                <li class="type__item">
+                                <li class="type__item full__opener">
                                     <p class="item__number">Процесс 1</p>
                                     <button class="item__opener"><img src="./images/vector-down.svg"></button>
                                 </li>
@@ -382,7 +383,7 @@
 
                         <li class="process__item">
                             <ul class="process__type">
-                                <li class="type__item">
+                                <li class="type__item full__opener">
                                     <p class="item__number">Процесс 2</p>
                                     <button class="item__opener"><img src="./images/vector-down.svg"></button>
                                 </li>
@@ -412,7 +413,7 @@
 
                         <li class="process__item">
                             <ul class="process__type">
-                                <li class="type__item">
+                                <li class="type__item full__opener">
                                     <p class="item__number">Процесс 3</p>
                                     <button class="item__opener"><img src="./images/vector-down.svg"></button>
                                 </li>
@@ -432,7 +433,7 @@
                                     <img src="./images/car.svg" class="block__img">
                                     <p class="block__p">Доставка на место и монтажные работы.</p>
                                 </li>
-                                
+
                                 <li class="description__block">
                                     <img src="./images/payment.svg" class="block__img">
                                     <p class="block__p">Сдача проекта на месте и оплата оставшийся части суммы</p>
