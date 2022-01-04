@@ -43,8 +43,8 @@
                     width: 100%;
 
                     .extra-button {
-                        display: none;
                         @include button($fs: 13px, $h: 46px, $w: 160px);
+                        display: none;
                         width: 160px;
                         padding: 16px;
                     }
