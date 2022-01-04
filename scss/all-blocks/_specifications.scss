@@ -90,7 +90,7 @@
                                         display: inline-table;
                                         width: 30px;
                                         height: 30px;
-                                        background-image: url(../images/techno.svg);
+                                        background-image: url(../images/vars/techno.svg);
                                         background-repeat: no-repeat;
                                         background-position: center;
                                         content: '';
@@ -98,7 +98,7 @@
                                     }
 
                                     .required__description:nth-child(2)::before {
-                                        background-image: url(../images/clock.svg);
+                                        background-image: url(../images/vars/clock.svg);
                                     }
 
                                     .required__description + .required__description {
@@ -134,7 +134,7 @@
                                     height: 10px;
                                     margin-right: 15px;
                                     background-repeat: no-repeat;
-                                    background-image: url(../images/vector.svg);
+                                    background-image: url(../images/vars/vector.svg);
                                     background-position: center;
                                     content: ''
                                 }

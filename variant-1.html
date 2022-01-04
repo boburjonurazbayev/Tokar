@@ -9,599 +9,1019 @@
     <link rel="stylesheet" href="css/styles.min.css">
 </head>
 
-<body class="var1">
-    <main class="main">
-        <div class="mini-nav">
+<body>
+    <div class="page var1">
+        <header class="header">
             <div class="container">
-                <div class="mini-nav__inner">
-                    <a href="./index.html" class="mini-nav__link">Главная страница /</a>
-
-                    <a href="./catalogue.html" class="mini-nav__link">Жилое /</a>
-
-                    <a href="./variant-1.html" class="mini-nav__link">Вариант ST-56 "Barcelona"</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="card" id="card">
-            <div class="container">
-                <div class="card__inner">
-                    <div class="nav__heading">
-                        <h1 class="nav__title">Вариант ST-56 «Barcelona»</h1>
-                        <a href="./catalog.html" class="nav__link">
-                            <img src="./images/cancel.svg" alt="Cancel button" class="link__img">
-                            <p class="link__p">Вернуться назад</p>
-                        </a>
-                    </div>
-
-                    <div class="card__card">
-                        <div class="card__images">
-                            <div class="image__list">
-                                <picture class="main__img">
-                                    <source media="(max-width: 320px)"
-                                        srcset="./images/webp/main-barcelona-mobile.webp 1x, ./images/webp/main-barcelona-mobile@2x.webp 2x">
-
-                                    <source
-                                        srcset="./images/webp/main-barcelona.webp 1x, ./images/webp/main-barcelona@2x.webp 2x">
-
-                                    <source media="(max-width: 320px)"
-                                        srcset="./images/main-barcelona-mobile.png 1x, ./images/main-barcelona-mobile@2x.png 2x">
-
-                                    <img src="./images/main-barcelona.png"
-                                        srcset="./images/main-barcelona.png 1x, ./images/main-barcelona@2x.png"
-                                        alt="Barcelona Img">
-                                </picture>
-
-                                <picture class="main__img">
-                                    <!-- <source media="(max-width: 320px)"
-                                        srcset="./images/webp/main-barcelona-mobile.webp 1x, ./images/webp/main-barcelona-mobile@2x.webp 2x">
-
-                                    <source
-                                        srcset="./images/webp/main-barcelona.webp 1x, ./images/webp/main-barcelona@2x.webp 2x">
-
-                                    <source media="(max-width: 320px)"
-                                        srcset="./images/main-barcelona-mobile.png 1x, ./images/main-barcelona-mobile@2x.png 2x">
-
-                                    <img src="./images/main-barcelona.png"
-                                        srcset="./images/main-barcelona.png 1x, ./images/main-barcelona@2x.png"
-                                        alt="Barcelona Img"> -->
-                                    <img src="./images/answers@2x.png" alt="">
-                                </picture>
-
-                                <picture class="main__img">
-                                    <source media="(max-width: 320px)"
-                                        srcset="./images/webp/main-barcelona-mobile.webp 1x, ./images/webp/main-barcelona-mobile@2x.webp 2x">
-
-                                    <source
-                                        srcset="./images/webp/main-barcelona.webp 1x, ./images/webp/main-barcelona@2x.webp 2x">
-
-                                    <source media="(max-width: 320px)"
-                                        srcset="./images/main-barcelona-mobile.png 1x, ./images/main-barcelona-mobile@2x.png 2x">
-
-                                    <img src="./images/main-barcelona.png"
-                                        srcset="./images/main-barcelona.png 1x, ./images/main-barcelona@2x.png"
-                                        alt="Barcelona Img">
-                                </picture>
-
-                                <picture class="main__img">
-                                    <source media="(max-width: 320px)"
-                                        srcset="./images/webp/main-barcelona-mobile.webp 1x, ./images/webp/main-barcelona-mobile@2x.webp 2x">
-
-                                    <source
-                                        srcset="./images/webp/main-barcelona.webp 1x, ./images/webp/main-barcelona@2x.webp 2x">
-
-                                    <source media="(max-width: 320px)"
-                                        srcset="./images/main-barcelona-mobile.png 1x, ./images/main-barcelona-mobile@2x.png 2x">
-
-                                    <img src="./images/main-barcelona.png"
-                                        srcset="./images/main-barcelona.png 1x, ./images/main-barcelona@2x.png"
-                                        alt="Barcelona Img">
-                                </picture>
-
-                                <div class="switches">
-                                    <button class="arrow arrow--prev"><img src="./images/arrow--prev.svg"></button>
-                                    <p>1</p>
-                                    <p>/</p>
-                                    <p>4</p>
-                                    <button class="arrow arrow--next"><img src="./images/arrow--next.svg"></button>
-                                </div>
-
-
+                <div class="header__inner">
+                    <div class="header__info">
+                        <div class="logo-sm">
+                            <div class="company__info">
+                                <p class="header--active__text">Меню</p>
+                                <button class="header__hamburger">
+                                    <img src="./images/header-footer/menu.svg" alt="Menu" class="hamburger__img">
+                                </button>
+                                <img src="./images/header-footer/logo.svg" alt="Company logo" class="header__logo">
+                                <p class="company__description">TokarCompany - производственно -строительная компания</p>
+                                <button class="phone__button pop-button" id="price-button" onclick="location.href='#pop-exit'"">
+                                    <img src="./images/header-footer/phone.svg" alt="Phone us" class="phone__img">
+                                </button>
+                                <button class="header__closer">
+                                    <img src="./images/header-footer/x.svg" alt="X">
+                                </button>
                             </div>
-
-                            <div class="card__gallery">
-                                <picture class="gallery__button">
-                                    <source
-                                        srcset="./images/webp/first-barcelona.webp 1x, ./images/webp/first-barcelona@2x.webp 2x">
-
-                                    <img class="card__image" src="./images/first-barcelona.png"
-                                        srcset="./images/first-barcelona.png 1x, ./images/first-barcelona@2x.png"
-                                        alt="Barcelona Img">
-                                </picture>
-
-                                <picture class="gallery__button">
-                                    <source
-                                        srcset="./images/webp/second-barcelona.webp 1x, ./images/webp/second-barcelona@2x.webp 2x">
-
-                                    <img class="card__image" src="./images/second-barcelona.png"
-                                        alt="Barcelona second Image"
-                                        srcset="./images/second-barcelona.png 1x, ./images/second-barcelona@2x.png">
-                                </picture>
-
-                                <picture class="gallery__button">
-                                    <source
-                                        srcset="./images/webp/third-barcelona.webp 1x, ./images/webp/third-barcelona@2x.webp 2x">
-
-                                    <img class="card__image" src="./images/third-barcelona.png"
-                                        alt="Barcelona second Image"
-                                        srcset="./images/third-barcelona.png 1x, ./images/third-barcelona@2x.png">
-                                </picture>
-
-                                <picture class="gallery__button">
-                                    <source
-                                        srcset="./images/webp/fourth-barcelona.webp 1x, ./images/webp/fourth-barcelona@2x.webp 2x">
-
-                                    <img class="card__image" src="./images/fourth-barcelona.png"
-                                        alt="Barcelona second Image"
-                                        srcset="./images/fourth-barcelona.png 1x, ./images/fourth-barcelona@2x.png">
-                                </picture>
-                            </div>
-
-                            <div class="price">
-                                <h2 class="price__title">от 1 000 000 грн</h2>
-                                <p class="price__description">Стоимость строения зависит от комплектации</p>
-                                <a class="price__button pop-button" id="price-button" href="#pop-exit">Получить точный
-                                    расчет</a>
+        
+                            <div class="social-media">
+                                <p class="social-media__p">Связаться напрямую:</p>
+                                <ul class="social-media__list">
+                                    <li class="social-media__item">
+                                        <a href="www.telegram.org">
+                                            <img src="./images/header-footer/telegram.svg" alt="Our telegram">
+                                        </a>
+                                    </li>
+                                    <li class="social-media__item">
+                                        <a href="www.whatsapp.com">
+                                            <img src="./images/header-footer/whatsapp.svg" alt="Our whatsapp">
+                                        </a>
+                                    </li>
+                                    <li class="social-media__item">
+                                        <a href="www.viber.com">
+                                            <img src="./images/header-footer/viber.svg" alt="Our viber">
+                                        </a>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
-
-                        <form class="card__form" action="https://echo.htmlacademy.ru/">
-                            <label>
-                                <p>Закажите консультацию, если сомневаетесь</p>
-                            </label>
-
-                            <div class="form__inputs">
-                                <div class="phone__input phone__ukr">
-                                    <input type="tel" name="Tel" class="tel__input" placeholder="+38 XXX XXX XX XX"
-                                        pattern="^\+?3?8?([\s\.-]\d{3}[\s\.-]\d{3}[\s\.-]\d{2}[\s\.-]\d{2})$">
-                                    <button type="button" class="flag__button">
-                                        <img src="./images/ukr.svg" alt="">
-                                        <img src="./images/arrow.svg" alt="">
-                                    </button>
+    
+                        <div class="order-lang">
+                            <div class="call-order">
+                                <div class="tel-info">
+                                    <p class="tel__number">+3 80 (67) 175 56 30</p>
+                                    <p class="tel__time">с 09:00 до 18:00 (пн-вс)</p>
                                 </div>
-
-                                <div class="phone__input phone__rus">
-                                    <input type="tel" name="Tel" class="tel__input" placeholder="+7 XXX XXX XX XX"
-                                        pattern="^\+?7?([\s\.-]\d{3}[\s\.-]\d{3}[\s\.-]\d{2}[\s\.-]\d{2})$">
-                                    <button type="button" class="flag__button">
-                                        <img src="./images/rus.svg" alt="Russia">
-                                        <img src="./images/arrow.svg" alt="arrow">
-                                    </button>
+        
+                                <div class="call-order__order">
+                                    <button class="call-order__button pop-button" id="price-button" onclick="location.href='#pop-exit'">Заказать звонок</button>
+                                    <p class="call-order__p">Бесплатно по Украине</p>
                                 </div>
-
-                                <div class="tel-type">
-                                    <ul class="tel__list">
-                                        <button type="button" class="tel__button button__rus">
-                                            <li class="tel__item item__rus">
-                                                <img src="./images/rus.svg" alt="Russia">
-                                                <p class="tel__p">+7 XXX XXX XX XX</p>
-                                            </li>
-                                        </button>
-                                        <button type="button" class="tel__button button__ukr">
-                                            <li class="tel__item item__ukr">
-                                                <img src="./images/ukr.svg" alt="Ukraine">
-                                                <p class="tel__p">+38 XXX XXX XX XX</p>
-                                            </li>
-                                        </button>
-                                    </ul>
-                                </div>
-
-                                <input type="submit" class="submit__input" value="Заказать">
                             </div>
-                        </form>
+        
+                            <button class="header__lang">
+                                <img src="./images/header-footer/rus.svg" alt="Russian" class="header__flag rus__flag">
+                                <img src="./images/header-footer/ukr.svg" alt="Ukraine" class="header__flag ukr__flag">
+                                <img src="./images/header-footer/arrow.svg" alt="Arrow" class="header__arrow">
+                            </button>
+                        </div>
+                    </div>
+    
+                    <nav class="nav">
+                        <ul class="nav__list">
+                            <div class="nav__section nav__section--dark">
+                                <li class="nav__item nav__item--dark">
+                                    <div class="nav__item__opener">
+                                        <img src="./images/header-footer/arrow.svg" alt="arrow">
+                                        <button class="nav__link" onclick="location.href='./catalogue.html';">Жилое</button>
+                                        <img src="./images/header-footer/arrow.svg" alt="arrow">
+                                    </div>
+                                    <div class="nav__item__content">
+                                        <ul class="content__list">
+                                            <li class="content__item">
+                                                <a href="#" class="content__link">Дома из профилированого бруса</a>
+                                            </li>
+                                            <li class="content__item">
+                                                <a href="#" class="content__link">Дома из оцилиндрованого бруса</a>
+                                            </li>
+                                            <li class="content__item">
+                                                <a href="#" class="content__link">Каркасные дома</a>
+                                            </li>
+                                            <li class="content__item">
+                                                <a href="#" class="content__link">Дома из блока</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="nav__item nav__item--dark">
+                                    <div class="nav__item__opener">
+                                        <img src="./images/header-footer/arrow.svg" alt="arrow">
+                                        <button class="nav__link" onclick="location.href='./index.html';">Коммерческое</button>
+                                        <img src="./images/header-footer/arrow.svg" alt="arrow">
+                                    </div>
+                                    <div class="nav__item__content">
+                                        <ul class="content__list">
+                                            <li class="content__item">
+                                                <a href="#" class="content__link">Базы отдыха</a>
+                                            </li>
+                                            <li class="content__item">
+                                                <a href="#" class="content__link">Гостинницы</a>
+                                            </li>
+                                            <li class="content__item">
+                                                <a href="#" class="content__link">Рестораны</a>
+                                            </li>
+                                            <li class="content__item">
+                                                <a href="#" class="content__link">Кафе</a>
+                                            </li>
+                                            <li class="content__item">
+                                                <a href="#" class="content__link">Магазины</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="nav__item nav__item--dark">
+                                    <div class="nav__item__opener">
+                                        <img src="./images/header-footer/arrow.svg" alt="arrow">
+                                        <button class="nav__link" onclick="location.href='./index.html';">Садовое</button>
+                                        <img src="./images/header-footer/arrow.svg" alt="arrow">
+                                    </div>
+                                    <div class="nav__item__content">
+                                        <ul class="content__list">
+                                            <li class="content__item">
+                                                <a href="#" class="content__link">Деревянные бани</a>
+                                            </li>
+                                            <li class="content__item">
+                                                <a href="#" class="content__link">Беседки</a>
+                                            </li>
+                                            <li class="content__item">
+                                                <a href="#" class="content__link">Альтанки</a>
+                                            </li>
+                                            <li class="content__item">
+                                                <a href="#" class="content__link">Детские игровые площадки</a>
+                                            </li>
+                                            <li class="content__item">
+                                                <a href="#" class="content__link">Гаражи</a>
+                                            </li>
+                                            <li class="content__item">
+                                                <a href="#" class="content__link">Деревянные детские домики</a>
+                                            </li>
+                                            <li class="content__item">
+                                                <a href="#" class="content__link">Мангальные зоны и барбекю</a>
+                                            </li>
+                                            <li class="content__item">
+                                                <a href="#" class="content__link">Кухни</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </div>
+                            <div class="nav__section nav__section--light">
+                                <li class="nav__item">
+                                    <div class="nav__item__opener">
+                                        <button class="nav__link" onclick="location.href='./about.html';">О компании</button>
+                                    </div>
+                                </li>
+                                <li class="nav__item">
+                                    <div class="nav__item__opener">
+                                        <button class="nav__link" onclick="location.href='./our-work.html';">Наши работы</button>
+                                    </div>
+                                </li>
+                                <li class="nav__item">
+                                    <div class="nav__item__opener">
+                                        <img src="./images/header-footer/arrow.svg" alt="arrow">
+                                        <a href="./contacts.html" class="nav__link">Контакты</a>
+                                        <img src="./images/header-footer/arrow.svg" alt="arrow">
+                                    </div>
+                                </li>
+                            </div>
+                        </ul>
+                    </nav>
+
+                    <div class="extra-header">
+                        <div class="tel-info-fixed">
+                            <p class="tel__number">+3 80 (67) 175 56 30</p>
+                            <p class="tel__time">с 09:00 до 18:00 (пн-вс)</p>
+                        </div>
+    
+                        <div class="social-media-fixed">
+                            <p class="social-media__p">Связаться напрямую:</p>
+                            <ul class="social-media__list">
+                                <li class="social-media__item">
+                                    <a href="www.telegram.org">
+                                        <img src="./images/header-footer/telegram.svg" alt="Our telegram">
+                                    </a>
+                                </li>
+                                <li class="social-media__item">
+                                    <a href="www.whatsapp.com">
+                                        <img src="./images/header-footer/whatsapp.svg" alt="Our whatsapp">
+                                    </a>
+                                </li>
+                                <li class="social-media__item">
+                                    <a href="www.viber.com">
+                                        <img src="./images/header-footer/viber.svg" alt="Our viber">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+    
+                        <button class="extra-header-button pop-button" id="price-button" onclick="location.href='#pop-exit'">Заказать звонок</button>
                     </div>
                 </div>
             </div>
-        </div>
-
-        <div class="specifications">
-            <div class="container">
-                <div class="specifications__inner">
-                    <h1 class="specifications__title">Характеристика строения:</h1>
-                    <div class="specifications__info">
-                        <ul class="specifications__list">
-                            <li class="specifications__item">
-                                <img src="./images/square.svg" alt="Square" class="specifications__img">
-                                <p class="specifications__p">20м²</p>
+        </header>
+    
+        <main class="main">
+            <div class="mini-nav">
+                <div class="container">
+                    <div class="mini-nav__inner">
+                        <a href="./index.html" class="mini-nav__link">Главная страница /</a>
+    
+                        <a href="./catalogue.html" class="mini-nav__link">Жилое /</a>
+    
+                        <a href="./variant-1.html" class="mini-nav__link">Вариант ST-56 "Barcelona"</a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="card" id="card">
+                <div class="container">
+                    <div class="card__inner">
+                        <div class="nav__heading">
+                            <h1 class="nav__title">Вариант ST-56 «Barcelona»</h1>
+                            <a href="./catalog.html" class="nav__link">
+                                <img src="./images/vars/cancel.svg" alt="Cancel button" class="link__img">
+                                <p class="link__p">Вернуться назад</p>
+                            </a>
+                        </div>
+    
+                        <div class="card__card">
+                            <div class="card__images">
+                                <div class="image__list">
+                                    <picture class="main__img">
+                                        <source media="(max-width: 320px)"
+                                            srcset="./images/vars/webp/main-barcelona-mobile.webp 1x, ./images/vars/webp/main-barcelona-mobile@2x.webp 2x">
+    
+                                        <source
+                                            srcset="./images/vars/webp/main-barcelona.webp 1x, ./images/vars/webp/main-barcelona@2x.webp 2x">
+    
+                                        <source media="(max-width: 320px)"
+                                            srcset="./images/vars/main-barcelona-mobile.png 1x, ./images/vars/main-barcelona-mobile@2x.png 2x">
+    
+                                        <img src="./images/vars/main-barcelona.png"
+                                            srcset="./images/vars/main-barcelona.png 1x, ./images/vars/main-barcelona@2x.png"
+                                            alt="Barcelona Img">
+                                    </picture>
+    
+                                    <picture class="main__img">
+                                        <img src="./images/vars/answers@2x.png" alt="">
+                                    </picture>
+    
+                                    <picture class="main__img">
+                                        <source media="(max-width: 320px)"
+                                            srcset="./images/vars/webp/main-barcelona-mobile.webp 1x, ./images/vars/webp/main-barcelona-mobile@2x.webp 2x">
+    
+                                        <source
+                                            srcset="./images/vars/webp/main-barcelona.webp 1x, ./images/vars/webp/main-barcelona@2x.webp 2x">
+    
+                                        <source media="(max-width: 320px)"
+                                            srcset="./images/vars/main-barcelona-mobile.png 1x, ./images/vars/main-barcelona-mobile@2x.png 2x">
+    
+                                        <img src="./images/vars/main-barcelona.png"
+                                            srcset="./images/vars/main-barcelona.png 1x, ./images/vars/main-barcelona@2x.png"
+                                            alt="Barcelona Img">
+                                    </picture>
+    
+                                    <picture class="main__img">
+                                        <source media="(max-width: 320px)"
+                                            srcset="./images/vars/webp/main-barcelona-mobile.webp 1x, ./images/vars/webp/main-barcelona-mobile@2x.webp 2x">
+    
+                                        <source
+                                            srcset="./images/vars/webp/main-barcelona.webp 1x, ./images/vars/webp/main-barcelona@2x.webp 2x">
+    
+                                        <source media="(max-width: 320px)"
+                                            srcset="./images/vars/main-barcelona-mobile.png 1x, ./images/vars/main-barcelona-mobile@2x.png 2x">
+    
+                                        <img src="./images/vars/main-barcelona.png"
+                                            srcset="./images/vars/main-barcelona.png 1x, ./images/vars/main-barcelona@2x.png"
+                                            alt="Barcelona Img">
+                                    </picture>
+    
+                                    <div class="switches">
+                                        <button class="arrow arrow--prev"><img src="./images/vars/arrow--prev.svg"></button>
+                                        <p>1</p>
+                                        <p>/</p>
+                                        <p>4</p>
+                                        <button class="arrow arrow--next"><img src="./images/vars/arrow--next.svg"></button>
+                                    </div>
+    
+    
+                                </div>
+    
+                                <div class="card__gallery">
+                                    <picture class="gallery__button">
+                                        <source
+                                            srcset="./images/vars/webp/first-barcelona.webp 1x, ./images/vars/webp/first-barcelona@2x.webp 2x">
+    
+                                        <img class="card__image" src="./images/vars/first-barcelona.png"
+                                            srcset="./images/vars/first-barcelona.png 1x, ./images/vars/first-barcelona@2x.png"
+                                            alt="Barcelona Img">
+                                    </picture>
+    
+                                    <picture class="gallery__button">
+                                        <source
+                                            srcset="./images/vars/webp/second-barcelona.webp 1x, ./images/vars/webp/second-barcelona@2x.webp 2x">
+    
+                                        <img class="card__image" src="./images/vars/second-barcelona.png"
+                                            alt="Barcelona second Image"
+                                            srcset="./images/vars/second-barcelona.png 1x, ./images/vars/second-barcelona@2x.png">
+                                    </picture>
+    
+                                    <picture class="gallery__button">
+                                        <source
+                                            srcset="./images/vars/webp/third-barcelona.webp 1x, ./images/vars/webp/third-barcelona@2x.webp 2x">
+    
+                                        <img class="card__image" src="./images/vars/third-barcelona.png"
+                                            alt="Barcelona second Image"
+                                            srcset="./images/vars/third-barcelona.png 1x, ./images/vars/third-barcelona@2x.png">
+                                    </picture>
+    
+                                    <picture class="gallery__button">
+                                        <source
+                                            srcset="./images/vars/webp/fourth-barcelona.webp 1x, ./images/vars/webp/fourth-barcelona@2x.webp 2x">
+    
+                                        <img class="card__image" src="./images/vars/fourth-barcelona.png"
+                                            alt="Barcelona second Image"
+                                            srcset="./images/vars/fourth-barcelona.png 1x, ./images/vars/fourth-barcelona@2x.png">
+                                    </picture>
+                                </div>
+    
+                                <div class="price">
+                                    <h2 class="price__title">от 1 000 000 грн</h2>
+                                    <p class="price__description">Стоимость строения зависит от комплектации</p>
+                                    <a class="price__button pop-button" id="price-button" href="#pop-exit">Получить точный
+                                        расчет</a>
+                                </div>
+                            </div>
+    
+                            <form class="card__form" action="https://echo.htmlacademy.ru/">
+                                <label>
+                                    <p>Закажите консультацию, если сомневаетесь</p>
+                                </label>
+    
+                                <div class="form__inputs">
+                                    <div class="phone__input phone__ukr">
+                                        <input type="tel" name="Tel" class="tel__input" placeholder="+38 XXX XXX XX XX"
+                                            pattern="^\+?3?8?([\s\.-]\d{3}[\s\.-]\d{3}[\s\.-]\d{2}[\s\.-]\d{2})$">
+                                        <button type="button" class="flag__button">
+                                            <img src="./images/vars/ukr.svg" alt="">
+                                            <img src="./images/vars/arrow.svg" alt="">
+                                        </button>
+                                    </div>
+    
+                                    <div class="phone__input phone__rus">
+                                        <input type="tel" name="Tel" class="tel__input" placeholder="+7 XXX XXX XX XX"
+                                            pattern="^\+?7?([\s\.-]\d{3}[\s\.-]\d{3}[\s\.-]\d{2}[\s\.-]\d{2})$">
+                                        <button type="button" class="flag__button">
+                                            <img src="./images/vars/rus.svg" alt="Russia">
+                                            <img src="./images/vars/arrow.svg" alt="arrow">
+                                        </button>
+                                    </div>
+    
+                                    <div class="tel-type">
+                                        <ul class="tel__list">
+                                            <button type="button" class="tel__button button__rus">
+                                                <li class="tel__item item__rus">
+                                                    <img src="./images/vars/rus.svg" alt="Russia">
+                                                    <p class="tel__p">+7 XXX XXX XX XX</p>
+                                                </li>
+                                            </button>
+                                            <button type="button" class="tel__button button__ukr">
+                                                <li class="tel__item item__ukr">
+                                                    <img src="./images/vars/ukr.svg" alt="Ukraine">
+                                                    <p class="tel__p">+38 XXX XXX XX XX</p>
+                                                </li>
+                                            </button>
+                                        </ul>
+                                    </div>
+    
+                                    <input type="submit" class="submit__input" value="Заказать">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="specifications">
+                <div class="container">
+                    <div class="specifications__inner">
+                        <h1 class="specifications__title">Характеристика строения:</h1>
+                        <div class="specifications__info">
+                            <ul class="specifications__list">
+                                <li class="specifications__item">
+                                    <img src="./images/vars/square.svg" alt="Square" class="specifications__img">
+                                    <p class="specifications__p">20м²</p>
+                                </li>
+    
+                                <li class="specifications__item">
+                                    <img src="./images/vars/height.svg" alt="Height" class="specifications__img">
+                                    <p class="specifications__p">2 этажа</p>
+                                </li>
+    
+                                <li class="specifications__item">
+                                    <img src="./images/vars/size.svg" alt="Size" class="specifications__img">
+                                    <p class="specifications__p">4x5м</p>
+                                </li>
+                            </ul>
+    
+                            <div class="specification__description">
+                                <div class="specification__article">
+                                    <picture>
+                                        <source srcset="./images/vars/webp/spec-img.webp 1x, ./images/vars/webp/spec-img@2x.webp 2x">
+                                        <img class="card__image" src="./images/vars/spec-img.png" alt="Barcelona second Image"
+                                            srcset="./images/vars/spec-img.png 1x, ./images/vars/spec-img@2x.png">
+                                    </picture>
+    
+                                    <div class="required__info">
+                                        <h2 class="required__title">Barcelona</h2>
+                                        <ul class="required__list">
+                                            <li class="required__description">
+                                                <div class="required__text">
+                                                    <p class="info__title">Технологии:</p>
+                                                    <p class="info__p">Дом из газоблока и кирпича</p>
+                                                </div>
+                                            </li>
+    
+                                            <li class="required__description">
+                                                <div class="required__text">
+                                                    <p class="info__title">Сроки строительства:</p>
+                                                    <p class="info__p">30 дней</p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+    
+                                <ul class="all-specs">
+                                    <li class="specs__item">
+                                        <a href="#fundament" class="specs__button">Фундамент</a>
+                                    </li>
+    
+                                    <li class="specs__item">
+                                        <a href="#style" class="specs__button">Стиль</a>
+                                    </li>
+    
+                                    <li class="specs__item">
+                                        <a href="#windows" class="specs__button">Окна и входные двери</a>
+                                    </li>
+    
+                                    <li class="specs__item">
+                                        <a href="#inside" class="specs__button">Внутренняя отделка</a>
+                                    </li>
+    
+                                    <li class="specs__item">
+                                        <a href="#chimney" class="specs__button">Кровля</a>
+                                    </li>
+    
+                                    <li class="specs__item">
+                                        <a href="#fasad" class="specs__button">Фасад</a>
+                                    </li>
+    
+                                    <li class="specs__item">
+                                        <a href="#electricity" class="specs__button">Электросеть</a>
+                                    </li>
+    
+                                    <li class="specs__item">
+                                        <a href="#process" class="specs__button">Процесс работы</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="keymoments">
+                <div class="container">
+                    <div class="keymoments__inner">
+                        <ul class="keymoments__list">
+                            <li id="fundament" class="keymoments__item">
+                                <h1 class="keymoments__title">Фундамент</h1>
+    
+                                <picture>
+                                    <source type="image/webp" media="(max-width: 774px)"
+                                        srcset="./images/vars/webp/fundament-mobile.webp 1x, ./images/vars/webp/fundament-mobile@2x.webp 2x">
+                                    <source type="image/webp"
+                                        srcset="./images/vars/webp/fundament.webp 1x, ./images/vars/webp/fundament@2x.webp 2x">
+                                    <source media="(max-width: 774px)"
+                                        srcset="./images/vars/fundament-mobile.png 1x, ./images/vars/fundament-mobile@2x.png 2x">
+                                    <img src="./images/vars/fundament.png"
+                                        srcset="./images/vars/fundament.png 1x, ./images/vars/fundament@2x.png 2x" alt="фундамент">
+                                </picture>
                             </li>
-
-                            <li class="specifications__item">
-                                <img src="./images/height.svg" alt="Height" class="specifications__img">
-                                <p class="specifications__p">2 этажа</p>
+                            <li id="style" class="keymoments__item">
+                                <h1 class="keymoments__title">Стиль</h1>
+                                <picture>
+                                    <source type="image/webp" media="(max-width: 774px)"
+                                        srcset="./images/vars/webp/style-mobile.webp 1x, ./images/vars/webp/style-mobile@2x.webp 2x">
+    
+                                    <source type="image/webp"
+                                        srcset="./images/vars/webp/style.webp 1x, ./images/vars/webp/style@2x.webp 2x">
+    
+                                    <source media="(max-width: 774px)"
+                                        srcset="./images/vars/style-mobile.png 1x, ./images/vars/style-mobile@2x.png 2x">
+    
+                                    <img src="./images/vars/style.png" srcset="./images/vars/style.png 1x, ./images/vars/style@2x.png 2x"
+                                        alt="Стиль">
+                                </picture>
                             </li>
-
-                            <li class="specifications__item">
-                                <img src="./images/size.svg" alt="Size" class="specifications__img">
-                                <p class="specifications__p">4x5м</p>
+                            <li id="windows" class="keymoments__item">
+                                <h1 class="keymoments__title">Окна и входные двери</h1>
+                                <ul class="keymoments__sublist1">
+                                    <li class="sublist1__item">
+                                        <picture>
+                                            <source type="image/webp" media="(max-width: 774px)"
+                                                srcset="./images/vars/webp/window-mobile.webp 1x, ./images/vars/webp/window-mobile@2x.webp 2x">
+                                            <source type="image/webp"
+                                                srcset="./images/vars/webp/window.webp 1x, ./images/vars/webp/window@2x.webp 2x">
+                                            <source media="(max-width: 774px)"
+                                                srcset="./images/vars/window-mobile.png 1x, ./images/vars/window-mobile@2x.png 2x">
+                                            <img src="./images/vars/window.png"
+                                                srcset="./images/vars/window.png 1x, ./images/vars/window@2x.png 2x" alt="Окно">
+                                        </picture>
+                                    </li>
+    
+                                    <li class="sublist1__item">
+                                        <picture>
+                                            <source type="image/webp" media="(max-width: 774px)"
+                                                srcset="./images/vars/webp/door-mobile.webp 1x, ./images/vars/webp/door-mobile@2x.webp 2x">
+                                            <source type="image/webp"
+                                                srcset="./images/vars/webp/door.webp 1x, ./images/vars/webp/door@2x.webp 2x">
+                                            <source media="(max-width: 774px)"
+                                                srcset="./images/vars/door-mobile.png 1x, ./images/vars/door-mobile@2x.png 2x">
+                                            <img src="./images/vars/door.png"
+                                                srcset="./images/vars/door.png 1x, ./images/vars/door@2x.png 2x" alt="Дверь">
+                                        </picture>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="keymoments__item">
+                                <ul class="keymoments__sublist2">
+                                    <li id="inside" class="sublist2__item">
+                                        <h1 class="keymoments__title">Внутренняя отделка</h1>
+                                        <picture>
+                                            <source type="image/webp" media="(max-width: 774px)"
+                                                srcset="./images/vars/webp/inside-mobile.webp 1x, ./images/vars/webp/inside-mobile@2x.webp 2x">
+                                            <source type="image/webp"
+                                                srcset="./images/vars/webp/inside.webp 1x, ./images/vars/webp/inside@2x.webp 2x">
+                                            <source media="(max-width: 774px)"
+                                                srcset="./images/vars/inside-mobile.png 1x, ./images/vars/inside-mobile@2x.png 2x">
+                                            <img src="./images/vars/inside.png"
+                                                srcset="./images/vars/inside.png 1x, ./images/vars/inside@2x.png 2x"
+                                                alt="внутренняя отделка">
+                                        </picture>
+                                    </li>
+    
+                                    <li id="fasad" class="sublist2__item">
+                                        <h1 class="keymoments__title">Фасад</h1>
+                                        <picture>
+                                            <source type="image/webp" media="(max-width: 774px)"
+                                                srcset="./images/vars/webp/fasad-mobile.webp 1x, ./images/vars/webp/fasad-mobile@2x.webp 2x">
+                                            <source type="image/webp"
+                                                srcset="./images/vars/webp/fasad.webp 1x, ./images/vars/webp/fasad@2x.webp 2x">
+                                            <source media="(max-width: 774px)"
+                                                srcset="./images/vars/fasad-mobile.png 1x, ./images/vars/fasad-mobile@2x.png 2x">
+                                            <img src="./images/vars/fasad.png"
+                                                srcset="./images/vars/fasad.png 1x, ./images/vars/fasad@2x.png 2x" alt="фасад">
+                                        </picture>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li id="chimney" class="keymoments__item">
+                                <h1 class="keymoments__title">Кровля</h1>
+                                <picture>
+                                    <source type="image/webp" media="(max-width: 774px)"
+                                        srcset="./images/vars/webp/chimney-mobile.webp 1x, ./images/vars/webp/chimney-mobile@2x.webp 2x">
+                                    <source type="image/webp"
+                                        srcset="./images/vars/webp/chimney.webp 1x, ./images/vars/webp/chimney@2x.webp 2x">
+                                    <source media="(max-width: 774px)"
+                                        srcset="./images/vars/chimney-mobile.png 1x, ./images/vars/chimney-mobile@2x.png 2x">
+                                    <img src="./images/vars/chimney.png"
+                                        srcset="./images/vars/chimney.png 1x, ./images/vars/chimney@2x.png 2x" alt="Кровля">
+                                </picture>
+                            </li>
+                            <li id="electricity" class="keymoments__item">
+                                <h1 class="keymoments__title">Электросеть</h1>
+                                <picture>
+                                    <source type="image/webp" media="(max-width: 774px)"
+                                        srcset="./images/vars/webp/electricity-mobile.webp 1x, ./images/vars/webp/electricity-mobile@2x.webp 2x">
+                                    <source type="image/webp"
+                                        srcset="./images/vars/webp/electricity.webp 1x, ./images/vars/webp/electricity@2x.webp 2x">
+                                    <source media="(max-width: 774px)"
+                                        srcset="./images/vars/electricity-mobile.png 1x, ./images/vars/electricity-mobile@2x.png 2x">
+                                    <img src="./images/vars/electricity.png"
+                                        srcset="./images/vars/electricity.png 1x, ./images/vars/electricity@2x.png 2x"
+                                        alt="Электросеть">
+                                </picture>
                             </li>
                         </ul>
-
-                        <div class="specification__description">
-                            <div class="specification__article">
-                                <picture>
-                                    <source srcset="./images/webp/spec-img.webp 1x, ./images/webp/spec-img@2x.webp 2x">
-                                    <img class="card__image" src="./images/spec-img.png" alt="Barcelona second Image"
-                                        srcset="./images/spec-img.png 1x, ./images/spec-img@2x.png">
-                                </picture>
-
-                                <div class="required__info">
-                                    <h2 class="required__title">Barcelona</h2>
-                                    <ul class="required__list">
-                                        <li class="required__description">
-                                            <div class="required__text">
-                                                <p class="info__title">Технологии:</p>
-                                                <p class="info__p">Дом из газоблока и кирпича</p>
-                                            </div>
-                                        </li>
-
-                                        <li class="required__description">
-                                            <div class="required__text">
-                                                <p class="info__title">Сроки строительства:</p>
-                                                <p class="info__p">30 дней</p>
-                                            </div>
-                                        </li>
-                                    </ul>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="order">
+                <div class="container">
+                    <div class="order__inner">
+                        <div class="order__form">
+                            <form class="card__form" action="https://echo.htmlacademy.ru/">
+                                <label>
+                                    <p>Закажите консультацию, если сомневаетесь</p>
+                                </label>
+                                <div class="form__inputs">
+                                    <div class="phone__input phone__ukr">
+                                        <input type="tel" name="Tel" class="tel__input" placeholder="+38 XXX XXX XX XX"
+                                            pattern="^\+?3?8?([\s\.-]\d{3}[\s\.-]\d{3}[\s\.-]\d{2}[\s\.-]\d{2})$">
+                                        <button type="button" class="flag__button">
+                                            <img src="./images/vars/ukr.svg" alt="">
+                                            <img src="./images/vars/arrow.svg" alt="">
+                                        </button>
+                                    </div>
+    
+                                    <div class="phone__input phone__rus">
+                                        <input type="tel" name="Tel" class="tel__input" placeholder="+7 XXX XXX XX XX"
+                                            pattern="^\+?7?([\s\.-]\d{3}[\s\.-]\d{3}[\s\.-]\d{2}[\s\.-]\d{2})$">
+                                        <button type="button" class="flag__button">
+                                            <img src="./images/vars/rus.svg" alt="Russia">
+                                            <img src="./images/vars/arrow.svg" alt="arrow">
+                                        </button>
+                                    </div>
+    
+                                    <div class="tel-type">
+                                        <ul class="tel__list">
+                                            <button type="button" class="tel__button button__rus">
+                                                <li class="tel__item item__rus">
+                                                    <img src="./images/vars/rus.svg" alt="Russia">
+                                                    <p class="tel__p">+7 XXX XXX XX XX</p>
+                                                </li>
+                                            </button>
+                                            <button type="button" class="tel__button button__ukr">
+                                                <li class="tel__item item__ukr">
+                                                    <img src="./images/vars/ukr.svg" alt="Ukraine">
+                                                    <p class="tel__p">+38 XXX XXX XX XX</p>
+                                                </li>
+                                            </button>
+                                        </ul>
+                                    </div>
+                                    <input type="submit" class="submit__input" value="Заказать">
                                 </div>
+    
+    
+                            </form>
+    
+                            <p class="form__p">Отправляя данные, Вы соглашаетесь на обработку <a
+                                    href="./Dogovor.txt">персональных данных</a></p>
+                        </div>
+    
+                        <picture>
+                            <source type="image/webp" media="(max-width: 774px)"
+                                srcset="./images/vars/webp/consult-mobile.webp 1x, ./images/vars/webp/consult-mobile@2x.webp 2x">
+                            <source type="image/webp"
+                                srcset="./images/vars/webp/consult.webp 1x, ./images/vars/webp/consult@2x.webp 2x">
+                            <source media="(max-width: 774px)"
+                                srcset="./images/vars/consult-mobile.png 1x, ./images/vars/consult-mobile@2x.png 2x">
+                            <img src="./images/vars/consult.png" srcset="./images/vars/consult.png 1x, ./images/vars/consult@2x.png 2x"
+                                alt="Консультация">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="process">
+                <div class="container">
+                    <div id="process" class="process__inner">
+                        <h1 class="process__title">Процесс работы</h1>
+    
+                        <ul class="process__list">
+                            <li class="process__item">
+                                <ul class="process__type">
+                                    <li class="type__item full__opener">
+                                        <p class="item__number">Процесс 1</p>
+                                        <button class="item__opener"><img src="./images/vars/vector-down.svg"></button>
+                                    </li>
+    
+                                    <li class="type__item">
+                                        <p class="item__p">Общение с экспертами</p>
+                                    </li>
+                                </ul>
+    
+                                <ul class="process__description">
+                                    <li class="description__block">
+                                        <img src="./images/vars/meeting.svg" class="block__img">
+                                        <p class="block__p">Ваше знакомство с представителем компании.</p>
+                                    </li>
+    
+                                    <li class="description__block">
+                                        <img src="./images/vars/consultion.svg" class="block__img">
+                                        <p class="block__p">Проведение консультации по интересующим вопросам.</p>
+                                    </li>
+    
+                                    <li class="description__block">
+                                        <img src="./images/vars/acception.svg" class="block__img">
+                                        <p class="block__p">Согласование всех деталей и размеров объекта.</p>
+                                    </li>
+                                </ul>
+                            </li>
+    
+                            <li class="process__item">
+                                <ul class="process__type">
+                                    <li class="type__item full__opener">
+                                        <p class="item__number">Процесс 2</p>
+                                        <button class="item__opener"><img src="./images/vars/vector-down.svg"></button>
+                                    </li>
+    
+                                    <li class="type__item">
+                                        <p class="item__p">Подбор варианта</p>
+                                    </li>
+                                </ul>
+    
+                                <ul class="process__description">
+                                    <li class="description__block">
+                                        <img src="./images/vars/3d.svg" class="block__img">
+                                        <p class="block__p">Создание индивидуального 3D-макета вашего проекта.</p>
+                                    </li>
+    
+                                    <li class="description__block">
+                                        <img src="./images/vars/papers.svg" class="block__img">
+                                        <p class="block__p">Заключение договора по выбранному варианту.</p>
+                                    </li>
+    
+                                    <li class="description__block">
+                                        <img src="./images/vars/money.svg" class="block__img">
+                                        <p class="block__p">Оплата предоплаты проекта.</p>
+                                    </li>
+                                </ul>
+                            </li>
+    
+                            <li class="process__item">
+                                <ul class="process__type">
+                                    <li class="type__item full__opener">
+                                        <p class="item__number">Процесс 3</p>
+                                        <button class="item__opener"><img src="./images/vars/vector-down.svg"></button>
+                                    </li>
+    
+                                    <li class="type__item">
+                                        <p class="item__p">Процесс работы и сдача проекта</p>
+                                    </li>
+                                </ul>
+    
+                                <ul class="process__description">
+                                    <li class="description__block">
+                                        <img src="./images/vars/preparation.svg" class="block__img">
+                                        <p class="block__p">Подготовка фундамента и материалов, конструкции.</p>
+                                    </li>
+    
+                                    <li class="description__block">
+                                        <img src="./images/vars/car.svg" class="block__img">
+                                        <p class="block__p">Доставка на место и монтажные работы.</p>
+                                    </li>
+    
+                                    <li class="description__block">
+                                        <img src="./images/vars/payment.svg" class="block__img">
+                                        <p class="block__p">Сдача проекта на месте и оплата оставшийся части суммы</p>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </main>
+    
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="logo__info">
+                        <img src="./images/header-footer/logo.svg" alt="company logo" class="footer__logo">
+                        <p class="logo__p">TokarCompany - производственно-строительная компания</p>
+                    </div>
+    
+                    <nav class="nav">
+                        <ul class="nav__list">
+                            <div class="nav__section nav__section--dark">
+                                <li class="nav__item nav__item--dark">
+                                    <div class="nav__item__opener">
+                                        <img src="./images/header-footer/arrow.svg" alt="arrow">
+                                        <button class="nav__link" onclick="location.href='./catalogue.html';">Жилое</button>
+                                        <img src="./images/header-footer/arrow.svg" alt="arrow">
+                                    </div>
+                                    <div class="nav__item__content">
+                                        <ul class="content__list">
+                                            <li class="content__item">
+                                                <a href="#" class="content__link">Дома из профилированого бруса</a>
+                                            </li>
+                                            <li class="content__item">
+                                                <a href="#" class="content__link">Дома из оцилиндрованого бруса</a>
+                                            </li>
+                                            <li class="content__item">
+                                                <a href="#" class="content__link">Каркасные дома</a>
+                                            </li>
+                                            <li class="content__item">
+                                                <a href="#" class="content__link">Дома из блока</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="nav__item nav__item--dark">
+                                    <div class="nav__item__opener">
+                                        <img src="./images/header-footer/arrow.svg" alt="arrow">
+                                        <button class="nav__link" onclick="location.href='./index.html';">Коммерческое</button>
+                                        <img src="./images/header-footer/arrow.svg" alt="arrow">
+                                    </div>
+                                    <div class="nav__item__content">
+                                        <ul class="content__list">
+                                            <li class="content__item">
+                                                <a href="#" class="content__link">Базы отдыха</a>
+                                            </li>
+                                            <li class="content__item">
+                                                <a href="#" class="content__link">Гостинницы</a>
+                                            </li>
+                                            <li class="content__item">
+                                                <a href="#" class="content__link">Рестораны</a>
+                                            </li>
+                                            <li class="content__item">
+                                                <a href="#" class="content__link">Кафе</a>
+                                            </li>
+                                            <li class="content__item">
+                                                <a href="#" class="content__link">Магазины</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="nav__item nav__item--dark">
+                                    <div class="nav__item__opener">
+                                        <img src="./images/header-footer/arrow.svg" alt="arrow">
+                                        <button class="nav__link" onclick="location.href='./index.html';">Садовое</button>
+                                        <img src="./images/header-footer/arrow.svg" alt="arrow">
+                                    </div>
+                                    <div class="nav__item__content">
+                                        <ul class="content__list">
+                                            <li class="content__item">
+                                                <a href="#" class="content__link">Деревянные бани</a>
+                                            </li>
+                                            <li class="content__item">
+                                                <a href="#" class="content__link">Беседки</a>
+                                            </li>
+                                            <li class="content__item">
+                                                <a href="#" class="content__link">Альтанки</a>
+                                            </li>
+                                            <li class="content__item">
+                                                <a href="#" class="content__link">Детские игровые площадки</a>
+                                            </li>
+                                            <li class="content__item">
+                                                <a href="#" class="content__link">Гаражи</a>
+                                            </li>
+                                            <li class="content__item">
+                                                <a href="#" class="content__link">Деревянные детские домики</a>
+                                            </li>
+                                            <li class="content__item">
+                                                <a href="#" class="content__link">Мангальные зоны и барбекю</a>
+                                            </li>
+                                            <li class="content__item">
+                                                <a href="#" class="content__link">Кухни</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
                             </div>
-
-                            <ul class="all-specs">
-                                <li class="specs__item">
-                                    <a href="#fundament" class="specs__button">Фундамент</a>
+                            <div class="nav__section nav__section--light">
+                                <li class="nav__item">
+                                    <div class="nav__item__opener">
+                                        <button class="nav__link" onclick="location.href='./about.html';">О компании</button>
+                                    </div>
                                 </li>
-
-                                <li class="specs__item">
-                                    <a href="#style" class="specs__button">Стиль</a>
+                                <li class="nav__item">
+                                    <div class="nav__item__opener">
+                                        <button class="nav__link" onclick="location.href='./our-work.html';">Наши работы</button>
+                                    </div>
                                 </li>
-
-                                <li class="specs__item">
-                                    <a href="#windows" class="specs__button">Окна и входные двери</a>
+                                <li class="nav__item">
+                                    <div class="nav__item__opener">
+                                        <img src="./images/header-footer/arrow.svg" alt="arrow">
+                                        <button class="nav__link nav__button pop-button" id="price-button" onclick="location.href='#pop-exit'">Записать звонок</button>
+                                        <img src="./images/header-footer/arrow.svg" alt="arrow">
+                                    </div>
                                 </li>
-
-                                <li class="specs__item">
-                                    <a href="#inside" class="specs__button">Внутренняя отделка</a>
+                            </div>
+                        </ul>
+                    </nav>
+    
+                    <div class="footer__info">
+                        <div class="footer__menu">
+                            <ul class="menu__list">
+                                <li class="menu__item">
+                                    <a href="#" class="menu__link">Дома из профилированого бруса</a>
                                 </li>
-
-                                <li class="specs__item">
-                                    <a href="#chimney" class="specs__button">Кровля</a>
+                                <li class="menu__item">
+                                    <a href="#" class="menu__link">Дома из оцилиндрованого бруса</a>
                                 </li>
-
-                                <li class="specs__item">
-                                    <a href="#fasad" class="specs__button">Фасад</a>
+                                <li class="menu__item">
+                                    <a href="#" class="menu__link">Каркасные дома</a>
                                 </li>
-
-                                <li class="specs__item">
-                                    <a href="#electricity" class="specs__button">Электросеть</a>
+                                <li class="menu__item">
+                                    <a href="#" class="menu__link">Дома из блока</a>
                                 </li>
-
-                                <li class="specs__item">
-                                    <a href="#process" class="specs__button">Процесс работы</a>
+                            </ul>
+    
+                            <ul class="menu__list">
+                                <li class="menu__item">
+                                    <a href="#" class="menu__link">Базы отдыха</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="#" class="menu__link">Гостинницы</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="#" class="menu__link">Рестораны</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="#" class="menu__link">Кафе</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="#" class="menu__link">Магазины</a>
+                                </li>
+                            </ul>
+    
+                            <ul class="menu__list">
+                                <li class="menu__item">
+                                    <a href="#" class="menu__link">Деревянные бани</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="#" class="menu__link">Беседки</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="#" class="menu__link">Альтанки</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="#" class="menu__link">Детские игровые площадки</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="#" class="menu__link">Гаражи</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="#" class="menu__link">Деревянные детские</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="#" class="menu__link">Мангальные зоны и барбекю</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="#" class="menu__link">Кухни</a>
                                 </li>
                             </ul>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="keymoments">
-            <div class="container">
-                <div class="keymoments__inner">
-                    <ul class="keymoments__list">
-                        <li id="fundament" class="keymoments__item">
-                            <h1 class="keymoments__title">Фундамент</h1>
-
-                            <picture>
-                                <source type="image/webp" media="(max-width: 774px)"
-                                    srcset="./images/webp/fundament-mobile.webp 1x, ./images/webp/fundament-mobile@2x.webp 2x">
-                                <source type="image/webp"
-                                    srcset="./images/webp/fundament.webp 1x, ./images/webp/fundament@2x.webp 2x">
-                                <source media="(max-width: 774px)"
-                                    srcset="./images/fundament-mobile.png 1x, ./images/fundament-mobile@2x.png 2x">
-                                <img src="./images/fundament.png"
-                                    srcset="./images/fundament.png 1x, ./images/fundament@2x.png 2x" alt="фундамент">
-                            </picture>
-                        </li>
-                        <li id="style" class="keymoments__item">
-                            <h1 class="keymoments__title">Стиль</h1>
-                            <picture>
-                                <source type="image/webp" media="(max-width: 774px)"
-                                    srcset="./images/webp/style-mobile.webp 1x, ./images/webp/style-mobile@2x.webp 2x">
-
-                                <source type="image/webp"
-                                    srcset="./images/webp/style.webp 1x, ./images/webp/style@2x.webp 2x">
-
-                                <source media="(max-width: 774px)"
-                                    srcset="./images/style-mobile.png 1x, ./images/style-mobile@2x.png 2x">
-
-                                <img src="./images/style.png" srcset="./images/style.png 1x, ./images/style@2x.png 2x"
-                                    alt="Стиль">
-                            </picture>
-                        </li>
-                        <li id="windows" class="keymoments__item">
-                            <h1 class="keymoments__title">Окна и входные двери</h1>
-                            <ul class="keymoments__sublist1">
-                                <li class="sublist1__item">
-                                    <picture>
-                                        <source type="image/webp" media="(max-width: 774px)"
-                                            srcset="./images/webp/window-mobile.webp 1x, ./images/webp/window-mobile@2x.webp 2x">
-                                        <source type="image/webp"
-                                            srcset="./images/webp/window.webp 1x, ./images/webp/window@2x.webp 2x">
-                                        <source media="(max-width: 774px)"
-                                            srcset="./images/window-mobile.png 1x, ./images/window-mobile@2x.png 2x">
-                                        <img src="./images/window.png"
-                                            srcset="./images/window.png 1x, ./images/window@2x.png 2x" alt="Окно">
-                                    </picture>
-                                </li>
-
-                                <li class="sublist1__item">
-                                    <picture>
-                                        <source type="image/webp" media="(max-width: 774px)"
-                                            srcset="./images/webp/door-mobile.webp 1x, ./images/webp/door-mobile@2x.webp 2x">
-                                        <source type="image/webp"
-                                            srcset="./images/webp/door.webp 1x, ./images/webp/door@2x.webp 2x">
-                                        <source media="(max-width: 774px)"
-                                            srcset="./images/door-mobile.png 1x, ./images/door-mobile@2x.png 2x">
-                                        <img src="./images/door.png"
-                                            srcset="./images/door.png 1x, ./images/door@2x.png 2x" alt="Дверь">
-                                    </picture>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="keymoments__item">
-                            <ul class="keymoments__sublist2">
-                                <li id="inside" class="sublist2__item">
-                                    <h1 class="keymoments__title">Внутренняя отделка</h1>
-                                    <picture>
-                                        <source type="image/webp" media="(max-width: 774px)"
-                                            srcset="./images/webp/inside-mobile.webp 1x, ./images/webp/inside-mobile@2x.webp 2x">
-                                        <source type="image/webp"
-                                            srcset="./images/webp/inside.webp 1x, ./images/webp/inside@2x.webp 2x">
-                                        <source media="(max-width: 774px)"
-                                            srcset="./images/inside-mobile.png 1x, ./images/inside-mobile@2x.png 2x">
-                                        <img src="./images/inside.png"
-                                            srcset="./images/inside.png 1x, ./images/inside@2x.png 2x"
-                                            alt="внутренняя отделка">
-                                    </picture>
-                                </li>
-
-                                <li id="fasad" class="sublist2__item">
-                                    <h1 class="keymoments__title">Фасад</h1>
-                                    <picture>
-                                        <source type="image/webp" media="(max-width: 774px)"
-                                            srcset="./images/webp/fasad-mobile.webp 1x, ./images/webp/fasad-mobile@2x.webp 2x">
-                                        <source type="image/webp"
-                                            srcset="./images/webp/fasad.webp 1x, ./images/webp/fasad@2x.webp 2x">
-                                        <source media="(max-width: 774px)"
-                                            srcset="./images/fasad-mobile.png 1x, ./images/fasad-mobile@2x.png 2x">
-                                        <img src="./images/fasad.png"
-                                            srcset="./images/fasad.png 1x, ./images/fasad@2x.png 2x" alt="фасад">
-                                    </picture>
-                                </li>
-                            </ul>
-                        </li>
-                        <li id="chimney" class="keymoments__item">
-                            <h1 class="keymoments__title">Кровля</h1>
-                            <picture>
-                                <source type="image/webp" media="(max-width: 774px)"
-                                    srcset="./images/webp/chimney-mobile.webp 1x, ./images/webp/chimney-mobile@2x.webp 2x">
-                                <source type="image/webp"
-                                    srcset="./images/webp/chimney.webp 1x, ./images/webp/chimney@2x.webp 2x">
-                                <source media="(max-width: 774px)"
-                                    srcset="./images/chimney-mobile.png 1x, ./images/chimney-mobile@2x.png 2x">
-                                <img src="./images/chimney.png"
-                                    srcset="./images/chimney.png 1x, ./images/chimney@2x.png 2x" alt="Кровля">
-                            </picture>
-                        </li>
-                        <li id="electricity" class="keymoments__item">
-                            <h1 class="keymoments__title">Электросеть</h1>
-                            <picture>
-                                <source type="image/webp" media="(max-width: 774px)"
-                                    srcset="./images/webp/electricity-mobile.webp 1x, ./images/webp/electricity-mobile@2x.webp 2x">
-                                <source type="image/webp"
-                                    srcset="./images/webp/electricity.webp 1x, ./images/webp/electricity@2x.webp 2x">
-                                <source media="(max-width: 774px)"
-                                    srcset="./images/electricity-mobile.png 1x, ./images/electricity-mobile@2x.png 2x">
-                                <img src="./images/electricity.png"
-                                    srcset="./images/electricity.png 1x, ./images/electricity@2x.png 2x"
-                                    alt="Электросеть">
-                            </picture>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <div class="order">
-            <div class="container">
-                <div class="order__inner">
-                    <div class="order__form">
-                        <form class="card__form" action="https://echo.htmlacademy.ru/">
-                            <label>
-                                <p>Закажите консультацию, если сомневаетесь</p>
-                            </label>
-                            <div class="form__inputs">
-                                <div class="phone__input phone__ukr">
-                                    <input type="tel" name="Tel" class="tel__input" placeholder="+38 XXX XXX XX XX"
-                                        pattern="^\+?3?8?([\s\.-]\d{3}[\s\.-]\d{3}[\s\.-]\d{2}[\s\.-]\d{2})$">
-                                    <button type="button" class="flag__button">
-                                        <img src="./images/ukr.svg" alt="">
-                                        <img src="./images/arrow.svg" alt="">
-                                    </button>
-                                </div>
-
-                                <div class="phone__input phone__rus">
-                                    <input type="tel" name="Tel" class="tel__input" placeholder="+7 XXX XXX XX XX"
-                                        pattern="^\+?7?([\s\.-]\d{3}[\s\.-]\d{3}[\s\.-]\d{2}[\s\.-]\d{2})$">
-                                    <button type="button" class="flag__button">
-                                        <img src="./images/rus.svg" alt="Russia">
-                                        <img src="./images/arrow.svg" alt="arrow">
-                                    </button>
-                                </div>
-
-                                <div class="tel-type">
-                                    <ul class="tel__list">
-                                        <button type="button" class="tel__button button__rus">
-                                            <li class="tel__item item__rus">
-                                                <img src="./images/rus.svg" alt="Russia">
-                                                <p class="tel__p">+7 XXX XXX XX XX</p>
-                                            </li>
-                                        </button>
-                                        <button type="button" class="tel__button button__ukr">
-                                            <li class="tel__item item__ukr">
-                                                <img src="./images/ukr.svg" alt="Ukraine">
-                                                <p class="tel__p">+38 XXX XXX XX XX</p>
-                                            </li>
-                                        </button>
-                                    </ul>
-                                </div>
-                                <input type="submit" class="submit__input" value="Заказать">
+    
+                        <div class="company__info">
+                            <div class="logo__info">
+                                <img src="./images/header-footer/logo.svg" alt="company logo" class="footer__logo">
+                                <p class="logo__p">TokarCompany - производственно-строительная компания</p>
+                            </div>
+    
+                            <div class="social-media">
+                                <p class="social-media__p">Связаться напрямую:</p>
+                                <ul class="social-media__list">
+                                    <li class="social-media__item">
+                                        <a href="www.telegram.org">
+                                            <img src="./images/header-footer/telegram.svg" alt="Our telegram">
+                                        </a>
+                                    </li>
+                                    <li class="social-media__item">
+                                        <a href="www.whatsapp.com">
+                                            <img src="./images/header-footer/whatsapp.svg" alt="Our whatsapp">
+                                        </a>
+                                    </li>
+                                    <li class="social-media__item">
+                                        <a href="www.viber.com">
+                                            <img src="./images/header-footer/viber.svg" alt="Our viber">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+    
+                            <div class="tel-info">
+                                <p class="tel__number">+3 80 (67) 175 56 30</p>
+                                <p class="tel__time">с 09:00 до 18:00 (пн-вс)</p>
                             </div>
 
-
-                        </form>
-
-                        <p class="form__p">Отправляя данные, Вы соглашаетесь на обработку <a
-                                href="./Dogovor.txt">персональных данных</a></p>
+                            <button class="extra-button pop-button" id="price-button" onclick="location.href='#pop-exit'">Записать звонок</button>
+                        </div>
                     </div>
-
-                    <picture>
-                        <source type="image/webp" media="(max-width: 774px)"
-                            srcset="./images/webp/consult-mobile.webp 1x, ./images/webp/consult-mobile@2x.webp 2x">
-                        <source type="image/webp"
-                            srcset="./images/webp/consult.webp 1x, ./images/webp/consult@2x.webp 2x">
-                        <source media="(max-width: 774px)"
-                            srcset="./images/consult-mobile.png 1x, ./images/consult-mobile@2x.png 2x">
-                        <img src="./images/consult.png" srcset="./images/consult.png 1x, ./images/consult@2x.png 2x"
-                            alt="Консультация">
-                    </picture>
+    
                 </div>
             </div>
-        </div>
-
-        <div class="process">
-            <div class="container">
-                <div id="process" class="process__inner">
-                    <h1 class="process__title">Процесс работы</h1>
-
-                    <ul class="process__list">
-                        <li class="process__item">
-                            <ul class="process__type">
-                                <li class="type__item full__opener">
-                                    <p class="item__number">Процесс 1</p>
-                                    <button class="item__opener"><img src="./images/vector-down.svg"></button>
-                                </li>
-
-                                <li class="type__item">
-                                    <p class="item__p">Общение с экспертами</p>
-                                </li>
-                            </ul>
-
-                            <ul class="process__description">
-                                <li class="description__block">
-                                    <img src="./images/meeting.svg" class="block__img">
-                                    <p class="block__p">Ваше знакомство с представителем компании.</p>
-                                </li>
-
-                                <li class="description__block">
-                                    <img src="./images/consultion.svg" class="block__img">
-                                    <p class="block__p">Проведение консультации по интересующим вопросам.</p>
-                                </li>
-
-                                <li class="description__block">
-                                    <img src="./images/acception.svg" class="block__img">
-                                    <p class="block__p">Согласование всех деталей и размеров объекта.</p>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="process__item">
-                            <ul class="process__type">
-                                <li class="type__item full__opener">
-                                    <p class="item__number">Процесс 2</p>
-                                    <button class="item__opener"><img src="./images/vector-down.svg"></button>
-                                </li>
-
-                                <li class="type__item">
-                                    <p class="item__p">Подбор варианта</p>
-                                </li>
-                            </ul>
-
-                            <ul class="process__description">
-                                <li class="description__block">
-                                    <img src="./images/3d.svg" class="block__img">
-                                    <p class="block__p">Создание индивидуального 3D-макета вашего проекта.</p>
-                                </li>
-
-                                <li class="description__block">
-                                    <img src="./images/papers.svg" class="block__img">
-                                    <p class="block__p">Заключение договора по выбранному варианту.</p>
-                                </li>
-
-                                <li class="description__block">
-                                    <img src="./images/money.svg" class="block__img">
-                                    <p class="block__p">Оплата предоплаты проекта.</p>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="process__item">
-                            <ul class="process__type">
-                                <li class="type__item full__opener">
-                                    <p class="item__number">Процесс 3</p>
-                                    <button class="item__opener"><img src="./images/vector-down.svg"></button>
-                                </li>
-
-                                <li class="type__item">
-                                    <p class="item__p">Процесс работы и сдача проекта</p>
-                                </li>
-                            </ul>
-
-                            <ul class="process__description">
-                                <li class="description__block">
-                                    <img src="./images/preparation.svg" class="block__img">
-                                    <p class="block__p">Подготовка фундамента и материалов, конструкции.</p>
-                                </li>
-
-                                <li class="description__block">
-                                    <img src="./images/car.svg" class="block__img">
-                                    <p class="block__p">Доставка на место и монтажные работы.</p>
-                                </li>
-
-                                <li class="description__block">
-                                    <img src="./images/payment.svg" class="block__img">
-                                    <p class="block__p">Сдача проекта на месте и оплата оставшийся части суммы</p>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
+            <div class="copyrights">
+                © 2020. Все права защищены. TokarCompany - Производственно-строительная компания. Информация, представленная на сайте, не является публичной офертой.
             </div>
-        </div>
-    </main>
+        </footer>
+    </div>
 
     <div class="pop-ups" id="pop-ups">
         <div class="pop-up">
-            <a href="#card" class="pop-exit" id="pop-exit"><img src="./images/x.svg" alt="exit"
+            <a href="#card" class="pop-exit" id="pop-exit"><img src="./images/vars/x.svg" alt="exit"
                     class="pop-exit__image"></a>
             <div class="pop-up__inner">
                 <picture>
                     <source type="image/webp" media="(max-width: 565px)"
-                        srcset="./images/webp/house-pop-mobile.webp 1x, ./images/webp/house-pop-mobile@2x.webp 2x">
+                        srcset="./images/vars/webp/house-pop-mobile.webp 1x, ./images/vars/webp/house-pop-mobile@2x.webp 2x">
                     <source media="(max-width:565px)"
-                        srcset="./images/house-pop-mobile.png 1x, ./images/house-pop-mobile@2x.png 2x">
+                        srcset="./images/vars/house-pop-mobile.png 1x, ./images/vars/house-pop-mobile@2x.png 2x">
                     <source type="image/webp"
-                        srcset="./images/webp/house-pop.webp 1x, ./images/webp/house-pop@2x.webp 2x">
-                    <img src="./images/house-pop.png" srcset="./images/house-pop.png 1x, ./images/house-pop@2x.png 2x"
+                        srcset="./images/vars/webp/house-pop.webp 1x, ./images/vars/webp/house-pop@2x.webp 2x">
+                    <img src="./images/vars/house-pop.png" srcset="./images/vars/house-pop.png 1x, ./images/vars/house-pop@2x.png 2x"
                         alt="Вопросы?" class="pop-up__image pop-up__image1">
                 </picture>
 
@@ -615,8 +1035,8 @@
                                 <input type="tel" name="Tel" class="tel__input" placeholder="+38 XXX XXX XX XX"
                                     pattern="^\+?3?8?([\s\.-]\d{3}[\s\.-]\d{3}[\s\.-]\d{2}[\s\.-]\d{2})$">
                                 <button type="button" class="flag__button">
-                                    <img src="./images/ukr.svg" alt="">
-                                    <img src="./images/arrow.svg" alt="">
+                                    <img src="./images/vars/ukr.svg" alt="">
+                                    <img src="./images/vars/arrow.svg" alt="">
                                 </button>
                             </div>
 
@@ -624,8 +1044,8 @@
                                 <input type="tel" name="Tel" class="tel__input" placeholder="+7 XXX XXX XX XX"
                                     pattern="^\+?7?([\s\.-]\d{3}[\s\.-]\d{3}[\s\.-]\d{2}[\s\.-]\d{2})$">
                                 <button type="button" class="flag__button">
-                                    <img src="./images/rus.svg" alt="Russia">
-                                    <img src="./images/arrow.svg" alt="arrow">
+                                    <img src="./images/vars/rus.svg" alt="Russia">
+                                    <img src="./images/vars/arrow.svg" alt="arrow">
                                 </button>
                             </div>
 
@@ -633,13 +1053,13 @@
                                 <ul class="tel__list">
                                     <button type="button" class="tel__button button__rus">
                                         <li class="tel__item item__rus">
-                                            <img src="./images/rus.svg" alt="Russia">
+                                            <img src="./images/vars/rus.svg" alt="Russia">
                                             <p class="tel__p">+7 XXX XXX XX XX</p>
                                         </li>
                                     </button>
                                     <button type="button" class="tel__button button__ukr">
                                         <li class="tel__item item__ukr">
-                                            <img src="./images/ukr.svg" alt="Ukraine">
+                                            <img src="./images/vars/ukr.svg" alt="Ukraine">
                                             <p class="tel__p">+38 XXX XXX XX XX</p>
                                         </li>
                                     </button>
@@ -655,15 +1075,15 @@
             </div>
         </div>
         <div class="pop-up">
-            <a href="#card" class="pop-exit"><img src="./images/x.svg" alt="exit" class="pop-exit__image"></a>
+            <a href="#card" class="pop-exit"><img src="./images/vars/x.svg" alt="exit" class="pop-exit__image"></a>
             <div class="pop-up__inner">
                 <picture>
                     <source type="image/webp" media="(max-width: 565px)"
-                        srcset="./images/webp/answers-mobile.webp 1x, ./images/webp/answers-mobile@2x.webp 2x">
+                        srcset="./images/vars/webp/answers-mobile.webp 1x, ./images/vars/webp/answers-mobile@2x.webp 2x">
                     <source media="(max-width:565px)"
-                        srcset="./images/answers-mobile.png 1x, ./images/answers-mobile@2x.png 2x">
-                    <source type="image/webp" srcset="./images/webp/answers.webp 1x, ./images/webp/answers@2x.webp 2x">
-                    <img src="./images/answers.png" srcset="./images/answers.png 1x, ./images/answers@2x.png 2x"
+                        srcset="./images/vars/answers-mobile.png 1x, ./images/vars/answers-mobile@2x.png 2x">
+                    <source type="image/webp" srcset="./images/vars/webp/answers.webp 1x, ./images/vars/webp/answers@2x.webp 2x">
+                    <img src="./images/vars/answers.png" srcset="./images/vars/answers.png 1x, ./images/vars/answers@2x.png 2x"
                         alt="Вопросы?" class="pop-up__image pop-up__image2">
                 </picture>
 
@@ -677,8 +1097,8 @@
                                 <input type="tel" name="Tel" class="tel__input" placeholder="+38 XXX XXX XX XX"
                                     pattern="^\+?3?8?([\s\.-]\d{3}[\s\.-]\d{3}[\s\.-]\d{2}[\s\.-]\d{2})$">
                                 <button type="button" class="flag__button">
-                                    <img src="./images/ukr.svg" alt="">
-                                    <img src="./images/arrow.svg" alt="">
+                                    <img src="./images/vars/ukr.svg" alt="">
+                                    <img src="./images/vars/arrow.svg" alt="">
                                 </button>
                             </div>
 
@@ -686,8 +1106,8 @@
                                 <input type="tel" name="Tel" class="tel__input" placeholder="+7 XXX XXX XX XX"
                                     pattern="^\+?7?([\s\.-]\d{3}[\s\.-]\d{3}[\s\.-]\d{2}[\s\.-]\d{2})$">
                                 <button type="button" class="flag__button">
-                                    <img src="./images/rus.svg" alt="Russia">
-                                    <img src="./images/arrow.svg" alt="arrow">
+                                    <img src="./images/vars/rus.svg" alt="Russia">
+                                    <img src="./images/vars/arrow.svg" alt="arrow">
                                 </button>
                             </div>
 
@@ -695,13 +1115,13 @@
                                 <ul class="tel__list">
                                     <button type="button" class="tel__button button__rus">
                                         <li class="tel__item item__rus">
-                                            <img src="./images/rus.svg" alt="Russia">
+                                            <img src="./images/vars/rus.svg" alt="Russia">
                                             <p class="tel__p">+7 XXX XXX XX XX</p>
                                         </li>
                                     </button>
                                     <button type="button" class="tel__button button__ukr">
                                         <li class="tel__item item__ukr">
-                                            <img src="./images/ukr.svg" alt="Ukraine">
+                                            <img src="./images/vars/ukr.svg" alt="Ukraine">
                                             <p class="tel__p">+38 XXX XXX XX XX</p>
                                         </li>
                                     </button>

@@ -1,0 +1,357 @@
+.header {
+    margin-bottom: 20px;
+    background-color: #FFFBF7;
+    z-index: 1000000;
+
+    .container {
+        .header__inner {
+            padding-top: 22px;
+            padding-bottom: 35px;
+
+            .extra-header {
+                .tel-info-fixed {
+                    display: none;
+                }
+    
+                .social-media-fixed {
+                    display: none;
+                }
+    
+                .extra-header-button {
+                    display: none;
+                }
+            }
+
+            .header__info {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 18px;
+
+                .logo-sm {
+                    display: flex;
+
+                    .company__info {
+                        display: flex;
+                        align-items: center;
+
+                        .header--active__text {
+                            display: none;
+                        }
+
+                        .header__closer {
+                            display: none;
+                            border: none;
+                            background-color: transparent;
+                            width: 18px;
+                            height: 18px;
+                            padding: 0;
+                            margin: 0;
+                        }
+
+                        .header__hamburger {
+                            display: none;
+                        }
+
+                        .phone__button {
+                            display: none;
+                        }
+    
+                        .company__description {
+                            max-width: 255px;
+                            width: 100%;
+                            @include text($fw: 600, $fs: 13px, $lh: 18px);
+                            letter-spacing: 0.08em;
+                            margin-left: 30px;
+                        }
+                    }
+    
+                    .social-media {
+                        margin-left: 10px;
+    
+                        .social-media__p {
+                            @include text($fw: 600, $fs: 12px, $lh: 18px);
+                            letter-spacing: 0.08em;
+                            margin-bottom: 4px;
+                        }
+    
+                        .social-media__list {
+                            @include reset-list();
+                            display: flex;
+    
+                            .social-media__item + .social-media__item {
+                                margin-left: 4px;
+                            }
+                        }
+                    }
+                }
+
+                .order-lang {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-left: 10px;
+
+                    .call-order {
+                        display: flex;
+                        align-items: center;
+    
+                        .tel-info {
+                            .tel__number {
+                                @include heading($fs: 20px, $lh: 16px);
+                                margin-bottom: 7px;
+                            }
+    
+                            .tel__time {
+                                @include text($fs: 12px, $lh: 18px);
+                                letter-spacing: 0.08em;
+                                text-align: right;
+                            }
+                        }
+    
+                        &__order {
+                            margin-left: 27px;
+    
+                            .call-order__button {
+                                @include button($fs: 13px, $h: 46px, $w: 160px);
+                                width: 160px;
+                                padding: 16px;
+                                margin-bottom: 7px;
+                            }
+    
+                            .call-order__p {
+                                @include text($fs: 11px, $lh: 18px);
+                                letter-spacing: 0.08em;
+                                text-align: center;
+                            }
+                        }
+                    }
+    
+                    .header__lang {
+                        border: none;
+                        background-color: transparent;
+                        cursor: pointer;
+                        margin-left: 25px;
+    
+                        .header__flag {
+                            width: 21px;
+                            height: 15px;
+    
+                            &:nth-child(2) {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1162px) {
+    .header {
+        .container {
+            .header__inner {
+                .header__info {
+                    flex-direction: column;
+
+                    .logo-sm {
+                        margin-bottom: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 709px) {
+    .header {
+        .container {
+            .header__inner {
+                .header__info {
+                    .logo-sm {
+                        flex-direction: column;
+                        align-items: center;
+
+                        .company__info {
+                            margin-bottom: 10px;
+                        }
+
+                        .social-media {
+                            margin-left: 0;
+                            align-items: center;
+
+                            
+                            &__list {
+                                max-width: fit-content;
+                                margin: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 590px) {
+    .header {
+        .container {
+            .header__inner {
+                padding: 12px 0;
+
+                .header__info {
+                    margin-bottom: 0;
+                    display: block;
+
+                    .logo-sm {
+                        margin-bottom: 0;
+
+                        .company__info {
+                            margin-bottom: 0;
+                            max-width: none;
+                            width: 100%;
+                            justify-content: space-between;
+
+                            .header__hamburger {
+                                display: block;
+                                border: none;
+                                background-color: transparent;
+                                padding: 0;
+                                margin: 0;
+                                margin-right: auto;
+                                width: 25px;
+                                height: 20px;
+                            }
+
+                            .phone__button {
+                                display: block;
+                                border: none;
+                                background-color: transparent;
+                                padding: 0;
+                                margin: 0;
+                                margin-left: auto;
+                                width: 30px;
+                                height: 30px;
+                            }
+
+                            .header__logo {
+                                display: block;
+                                max-width: 147px;
+                                width: 100%;
+                            }
+
+                            .company__description {
+                                display: none;
+                            }
+                        }
+
+                        .social-media {
+                            display: none;
+                        }
+                    }
+
+                    .order-lang {
+                        display: none;
+                    }
+                }
+
+                .nav {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .header--active {
+        position: fixed;
+        z-index: 100000;
+        width: 100%;
+        height: 100%;
+
+        .container {
+            .header__inner {
+                align-items: center;
+
+                .extra-header {
+                    justify-self: end;
+
+                    .tel-info-fixed {
+                        display: block;
+                        text-align: center;
+                        margin-bottom: 10px;
+    
+                        .tel__number {
+                            @include heading($fs: 20px, $lh: 16px);
+                            margin-bottom: 7px;
+                        }
+    
+                        .tel__time {
+                            @include text($fs: 12px, $lh: 18px);
+                            letter-spacing: 0.08em;
+                        }
+                    }
+        
+                    .social-media-fixed {
+                        display: block;
+                        margin-bottom: 10px;
+    
+                        .social-media__p {
+                            @include text($fw: 600, $fs: 12px, $lh: 18px);
+                            letter-spacing: 0.08em;
+                            margin-bottom: 4px;
+                            text-align: center;
+                        }
+    
+                        .social-media__list {
+                            @include reset-list();
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                        }
+                    }
+        
+                    .extra-header-button {
+                        display: block;
+                        @include button($fs: 13px, $h: 46px, $w: 160px);
+                        width: 160px;
+                        padding: 16px;
+                        margin: 0 auto;
+                    }
+                }
+
+                .header__info {
+                    margin-bottom: 10px;
+
+                    .logo-sm {
+                        .company__info {
+                            .header--active__text {
+                                display: block;
+                            }
+
+                            .header__closer {
+                                display: block;
+                            }
+
+                            .header__hamburger {
+                                display: none;
+                            }
+
+                            .header__logo {
+                                display: none;
+                            }
+
+                            .phone__button {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+
+                .nav {
+                    display: block;
+                    margin-bottom: 180px;
+                }
+            }
+        }
+    }
+}
