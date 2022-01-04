@@ -1,0 +1,58 @@
+.var2 {
+    .main {
+        .planings {
+            margin-bottom: 145px;
+
+            .container {
+                .planings__inner {
+                    .planings__title {
+                        @include heading();
+                    }
+
+                    .planings__list {
+                        @include reset-list();
+                        display: flex;
+                        justify-content: space-between;
+
+                        .planings__item {
+                            picture {
+                                img {
+                                    max-width: 570px;
+                                    width: 100%;
+                                }
+                            }
+                        }
+
+                        .planings__item:last-child {
+                            margin-left: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 639px) {
+    .var2 {
+        .main {
+            .planings {
+                margin-bottom: 60px;
+                
+                .container {
+                    .planings__inner {
+                        .planings__list {
+                            flex-direction: column;
+                            align-items: center;
+
+                            .planings__item:last-child {
+                                margin-left: 0;
+                                margin-top: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -5,5 +5,8 @@
             "extensionName": ".min.css",
             "savePath": "/css"
         }
-    ]
+    ],
+    "editor.cursorSmoothCaretAnimation": true,
+    "editor.smoothScrolling": true,
+    "workbench.list.smoothScrolling": true
 }

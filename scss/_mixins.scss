@@ -28,6 +28,14 @@
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
+  transition: all 0.3s ease;
+  cursor: pointer;
+
+  &:hover {
+    background: linear-gradient(180deg, #f39c32 0%, #cb8734 50%) ;
+    box-shadow: 8px 8px 0px rgba(203, 135, 52, 0.7);
+    transition: all 0.3s ease;
+  }
 }
 
 @mixin reset-list {
