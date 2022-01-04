@@ -295,11 +295,33 @@
     color: #2B2A28;
 }
 
-.catalogue-hero__main__card--image {
+.catalogue-hero__main__card--icon {
+    margin-bottom: 20px;
+    color: transparent;
+}
+
+.catalogue-hero__main__card--icon:hover {
+    color: rgb(209, 206, 206);
+}
+
+.catalogue-hero__main__card--inner {
+    display: flex;
+    align-items: center;
+    margin-right: 27px;
+}
+
+.catalogue-hero__main__card--unit {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 24px;
+    transform: translateY(-80%);
     margin: 0;
-    margin-bottom: 24px;
-    margin-left: 15px;
-    padding: 0;    
+    margin-left: 10px;
+    margin-top: 20px;
+    color: #828282;
+    
 }
 
 .catalogue-hero__main__card--button {
