@@ -1,0 +1,16 @@
+.var1, .var2 {
+    .main {
+        .mini-nav{
+            margin-bottom: 30px;
+
+            .container {
+                .mini-nav__inner {
+                    .mini-nav__link {
+                        @include text($fs: 12px, $lh: 17px, $color: #828282);
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}

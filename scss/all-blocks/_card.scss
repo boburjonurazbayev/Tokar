@@ -1,0 +1,436 @@
+.var1, .var2 {
+    .main {
+        .card {
+            margin-bottom: 196px;
+
+            .container {
+                .card__inner {
+                    .card__card {
+                        align-items: flex-end;
+        
+                        .card__images {
+                            display: flex;
+                            margin-bottom: 60px;
+                            position: relative;
+                            align-items: center;
+
+                            .price {
+                                position: absolute;
+                                padding: 50px 45px;
+                                box-shadow: 0px 0px 30px rgba(43, 42, 40, 0.08);
+                                border-radius: 8px;
+                                bottom: 0;
+                                left: 0;
+                                background-color: $white-color;
+                                max-width: 370px;
+                                width: 100%;
+                                transform: translateY(70%);
+    
+                                &__title {
+                                    @include text($fs: 30px, $lh: 36px);
+                                    margin-bottom: 12px;
+                                }
+    
+                                &__description {
+                                    @include text($fw: 300, $fs: 15px, $lh: 28px);
+                                    margin-bottom: 29px;
+                                }
+    
+                                &__button {
+                                    @include button($h: none);
+                                    padding: 20px 45px;
+                                }
+                            }
+
+                            
+        
+                            .image__list {
+                                position: relative;
+                                max-width: max-content;
+                                overflow: hidden;
+                                transition: transform 0.3s ease-in-out;
+                                // display: flex;
+        
+                                picture {
+                                    img {
+                                        max-width: 970px;
+                                        width: 100%;
+                                        opacity: 1;
+                                        transition: 0.3s ease-in-out;
+                                    }
+                                }
+
+                                .main__img + .main__img {
+                                    display: none;
+                                    opacity: 0;
+                                    transition: opacity 0.5s linear;
+                                }
+        
+                                .switches {
+                                    display: flex;
+                                    position: absolute;
+                                    bottom: 5%;
+                                    right: 5%;
+        
+                                    p {
+                                        @include text($fw: 500, $fs: 16px, $lh: 16px, $color: $white-color);
+                                        align-items: center;
+                                        text-align: center; 
+                                    }
+        
+                                    .arrow {
+                                        border: none;
+                                        background-color: transparent;
+                                        cursor: pointer;
+                                    }
+                                }
+        
+                                
+        
+                                .card__form {
+                                    display: block;
+                                }
+                            }
+
+                            .image__list1 {
+                                & + .card__gallery picture:nth-child(1) {
+                                    opacity: 0.5;
+                                }
+
+                                & + .card__gallery picture:nth-child(2) {
+                                    opacity: 1;
+                                }
+
+                                .main__img:nth-child(1) {
+                                    display: none;
+                                    opacity: 0;
+                                    transition: opacity 0.5s linear;
+                                }
+
+                                .main__img:nth-child(2) {
+                                    display: block;
+                                    opacity: 1;
+                                    transition: opacity 0.5s linear;
+                                }
+                            }
+
+                            .image__list2 {
+                                & + .card__gallery picture:nth-child(2) {
+                                    opacity: 0.5;
+                                }
+
+                                & + .card__gallery picture:nth-child(3) {
+                                    opacity: 1;
+                                }
+
+                                .main__img:nth-child(2) {
+                                    display: none;
+                                }
+
+                                .main__img:nth-child(3) {
+                                    display: block;
+                                    opacity: 1;
+                                    transition: opacity 0.3s ease-in-out;
+                                }
+                            }
+
+                            .image__list3 {
+                                & + .card__gallery picture:nth-child(3) {
+                                    opacity: 0.5;
+                                }
+
+                                & + .card__gallery picture:nth-child(4) {
+                                    opacity: 1;
+                                }
+
+                                .main__img:nth-child(3) {
+                                    display: none;
+                                }
+
+                                .main__img:nth-child(4) {
+                                    display: block;
+                                    opacity: 1;
+                                    transition: opacity 0.3s ease-in-out;
+                                }
+                            }
+        
+                            .card__gallery {
+                                display: flex;
+                                flex-direction: column;
+                                margin-left: 30px;
+                                max-width: 170px;
+                                width: 100%;
+        
+                                .card__image {
+                                    max-width: 170px;
+                                    width: 100%;
+                                }
+                                
+                                picture {
+                                    max-width: 170px;
+                                    width: 100%;
+                                    opacity: 0.5;
+                                }
+
+                                picture:nth-child(1) {
+                                    opacity: 1;
+                                }
+        
+                                picture + picture {
+                                    margin-top: 12px;
+                                    transition: opacity 1s ease-out;
+                                }
+                            }
+                        }
+        
+                        .card__form {
+                            max-width: 733px;
+                            width: 100%;
+                            margin-left: auto;
+        
+                            label {
+                                p {
+                                    @include text($fs: 30px, $lh: 36px, $fw: 300);
+                                    margin-bottom: 26px;
+                                }
+                            }
+
+                            
+        
+                            .form__inputs {
+                                display: flex;
+                                position: relative;
+
+                                .phone__rus {
+                                    display: none;
+                                }
+        
+                                .phone__input {
+                                    max-width: 440px;
+                                    width: 100%;
+                                    position: relative; 
+        
+                                    button {
+                                        border: none;
+                                        background-color: transparent;
+                                        display: flex;
+                                        align-items: center;
+                                        position: absolute;
+                                        top: 0;
+                                        bottom: 0;
+                                        left: 10px;
+                                        cursor: pointer;
+
+                                        img:nth-child(1) {
+                                            width: 29px;
+                                            height: 21px;
+                                        }
+        
+                                        img:nth-child(2) {
+                                            margin-left: 5px;
+                                            transform: none;
+                                            transition: transform 0.3s;
+                                        }
+                                    }
+        
+                                    .tel__input {
+                                        max-width: 440px;
+                                        width: 100%;
+                                        height: 100%;
+                                        border: 1px solid #E7D8C7;
+                                        box-sizing: border-box;
+                                        border-radius: 4px;
+                                    }
+        
+                                    .tel__input::placeholder {
+                                        @include text($fs: 14px, $lh: 17px, $color: #828282);
+                                    }
+        
+                                    .tel__input {
+                                        padding-left: 81px;
+                                    }
+                                }
+        
+                                .submit__input {
+                                    @include button($h: none);
+                                    margin-left: 17px;
+                                    padding: 23px 104px;
+                                    cursor: pointer;
+                                }
+                            }
+
+                            .form__rus {
+                                .phone__ukr {
+                                    display: none;
+                                }
+
+                                .phone__rus {
+                                    display: block;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1129px) {
+    .var1, .var2 {
+        .main {
+            .card {
+                .container {
+                    .card__inner {
+                        display: flex;
+                        flex-direction: column;
+
+                        .nav__heading {
+                            .nav__link {
+                                display: none;
+                            }
+                        }
+        
+                        .card__card {
+                            flex-direction: column;
+
+                            .card__form {
+                                margin-left: 0;
+                                align-items: center;
+                                margin: 0 auto;
+                                text-align: center;
+                            }
+                            
+                            .card__images {
+                                flex-direction: column;
+
+                                .price {
+                                    position: static;
+                                    right: 0;
+                                    top: 0;
+                                    bottom: 0;
+                                    left: 0;
+                                    margin: 0 auto;
+                                    align-items: center;
+                                    transform: translateY(0);
+                                    text-align: center;
+                                    max-width: 500px;
+
+                                    &__button {
+                                        max-width: none;
+                                    }
+                                }
+
+                                .image__list1 {
+                                    picture {
+                                        img {
+                                            max-width: 1109px;
+                                            width: 100%;
+                                        }
+                                    }
+                                }
+
+                                .card__gallery {
+                                    display: flex;
+                                    flex-direction: row;
+                                    margin-left: 0;
+                                    max-width: max-content;
+                                    margin-top: 6px;
+                                    justify-content: space-between;
+                                    max-width: none;
+                                    margin-bottom: 30px;
+
+                                    picture + picture {
+                                        margin-top: 0;
+                                        margin-left: 5px;
+                                    }
+
+                                    picture {
+                                        max-width: 270px;
+
+                                        .card__image {
+                                            max-width: 270px;
+                                            width: 100%;
+                                        }
+                                    }
+                                }
+                            }
+                       }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 545px) {
+    .var1, .var2 {
+        .main {
+            .card {
+                margin-bottom: 60px;
+
+                .container {
+                    .card__inner {
+                        .card__card {
+                            .card__images {
+                                .price {
+                                    &__title {
+                                        font-size: 24px;
+                                    }
+                                }
+                            }
+
+                            .card__form {
+                                .form__inputs {
+                                    display: flex;
+                                    flex-direction: column;
+                                    max-width: none;
+                                    width: 100%;
+
+                                    .phone__input {
+                                        max-width: 525px;
+                                        width: 100%;
+                                        margin-bottom: 10px;
+
+                                        .tel__input {
+                                            max-width: 525px;
+                                            padding: 21px 0;
+                                            padding-left: 81px;
+                                        }
+                                    }
+
+                                    .submit__input {
+                                        max-width: 525px;
+                                        margin-left: 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 365px) {
+    .var1, .var2 {
+        .main {
+            .card {
+                .container {
+                    .card__inner {
+                        .card__card {
+                            .card__form {
+                                label {
+                                    p {
+                                        font-size: 24px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
